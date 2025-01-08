@@ -15,9 +15,16 @@ func _ready() -> void:
 	#pass
 
 
+func set_texture(text):
+	key_texture = text
+	set_sprite_region()
+
 func set_sprite_region():
 	sprite.region_enabled = true
 	if key_texture != null: sprite.texture = key_texture
+	else:
+		print(11)
+		return
 	var texture_size_x = sprite.texture.get_size().x
 	var texture_size_y = sprite.texture.get_size().y
 	region_x_size = texture_size_x / 3 # it always cut by 3

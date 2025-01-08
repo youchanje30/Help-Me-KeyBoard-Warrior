@@ -3,15 +3,15 @@
 [ext_resource type="Script" path="res://Scripts/Key/KeySpriteController.gd" id="1_68b1b"]
 [ext_resource type="Texture2D" uid="uid://drcdhbhup0cgb" path="res://Sprites/Keyboards/AllKeys/0.png" id="2_og4ib"]
 
-[node name="Testkey" type="Node" node_paths=PackedStringArray("sprite")]
+[node name="Testkey" type="Node2D" node_paths=PackedStringArray("sprite")]
 script = ExtResource("1_68b1b")
 sprite = NodePath("Sprite2D")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(35, 19)
 texture = ExtResource("2_og4ib")
+centered = false
 region_enabled = true
-region_rect = Rect2(41, 0, 41, 21)
+region_rect = Rect2(0, 0, 19, 21)
 
 [node name="Timer" type="Timer" parent="."]
 autostart = true
