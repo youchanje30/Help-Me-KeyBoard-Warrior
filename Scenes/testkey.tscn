@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://bq3lmouvg7iih"]
+
+[ext_resource type="Script" path="res://Scripts/Key/KeySpriteController.gd" id="1_68b1b"]
+[ext_resource type="Texture2D" uid="uid://danefjfa5wrxr" path="res://Sprites/Keyboards/AllKeys/EMPTY2.png" id="2_4a2rn"]
+
+[node name="Testkey" type="Node" node_paths=PackedStringArray("sprite")]
+script = ExtResource("1_68b1b")
+sprite = NodePath("Sprite2D")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(35, 19)
+texture = ExtResource("2_4a2rn")
+region_enabled = true
+region_rect = Rect2(41, 0, 41, 21)
+
+[node name="Timer" type="Timer" parent="."]
+autostart = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
