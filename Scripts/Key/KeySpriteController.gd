@@ -1,4 +1,5 @@
 extends Node
+class_name key_controller
 
 @export var key_texture : Texture2D
 @export var sprite : Sprite2D
@@ -20,11 +21,10 @@ func set_texture(text):
 	set_sprite_region()
 
 func set_sprite_region():
-	sprite.region_enabled = true
 	if key_texture != null: sprite.texture = key_texture
-	else:
-		print(11)
-		return
+	else: return
+
+	sprite.region_enabled = true
 	var texture_size_x = sprite.texture.get_size().x
 	var texture_size_y = sprite.texture.get_size().y
 	region_x_size = texture_size_x / 3 # it always cut by 3
@@ -44,13 +44,3 @@ func press_btn()->void:
 func disable_btn()->void:
 	sprite.region_rect.position = Vector2.ZERO
 #endregion
-
-var cnt = 0
-func _on_timer_timeout() -> void:
-	if cnt == 0:
-		press_btn()
-	elif cnt == 1:
-		up_btn()
-	else:
-		disable_btn()
-	cnt = (cnt+1)%3

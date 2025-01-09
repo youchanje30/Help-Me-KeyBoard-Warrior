@@ -14,6 +14,11 @@ config/name="HelpMeKeyboardWarrior"
 config/features=PackedStringArray("4.3", "Forward Plus")
 config/icon="res://icon.svg"
 
+[autoload]
+
+InputManager="*res://Scenes/input_manager.tscn"
+KeyboardController="*res://Scenes/keyboard_controller.tscn"
+
 [rendering]
 
 textures/canvas_textures/default_texture_filter=0

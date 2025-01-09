@@ -1,6 +1,6 @@
 [gd_scene load_steps=28 format=3 uid="uid://d2mgkbc7a06ri"]
 
-[ext_resource type="Script" path="res://Scenes/GenerateKeyboard.gd" id="1_vc5ct"]
+[ext_resource type="Script" path="res://Scripts/Keyboard/GenerateKeyboard.gd" id="1_vc5ct"]
 [ext_resource type="Texture2D" uid="uid://dv2xy0wi0ffy4" path="res://Sprites/Keyboards/AllKeys/P.png" id="12_doyp5"]
 [ext_resource type="Texture2D" uid="uid://d2jic3rvfc8wi" path="res://Sprites/Keyboards/AllKeys/Q.png" id="13_jqhdm"]
 [ext_resource type="Texture2D" uid="uid://65mocvj6byqu" path="res://Sprites/Keyboards/AllKeys/W.png" id="14_84fio"]

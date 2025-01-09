@@ -12,8 +12,3 @@ texture = ExtResource("2_og4ib")
 centered = false
 region_enabled = true
 region_rect = Rect2(0, 0, 19, 21)
-
-[node name="Timer" type="Timer" parent="."]
-autostart = true
-
-[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

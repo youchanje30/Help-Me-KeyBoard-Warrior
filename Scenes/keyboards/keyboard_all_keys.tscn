@@ -1,161 +1,161 @@
 [gd_scene load_steps=59 format=3 uid="uid://cgrbe1ksgickp"]
 
-[ext_resource type="Texture2D" uid="uid://cnnfmmpcdvv5o" path="res://Sprites/Keyboards/AllKeys/TILDE.png" id="1_uhni7"]
-[ext_resource type="Texture2D" uid="uid://dfatth45tu6jb" path="res://Sprites/Keyboards/AllKeys/1.png" id="2_i411e"]
-[ext_resource type="Texture2D" uid="uid://wa5vf20si71o" path="res://Sprites/Keyboards/AllKeys/2.png" id="3_85q4x"]
-[ext_resource type="Texture2D" uid="uid://bdsmm7ulrwbvb" path="res://Sprites/Keyboards/AllKeys/3.png" id="4_n617j"]
-[ext_resource type="Texture2D" uid="uid://1yhxwxo2ispd" path="res://Sprites/Keyboards/AllKeys/4.png" id="5_t71i0"]
-[ext_resource type="Texture2D" uid="uid://dgh16wlyw6d4m" path="res://Sprites/Keyboards/AllKeys/5.png" id="6_r44sa"]
-[ext_resource type="Texture2D" uid="uid://b758oix4brokp" path="res://Sprites/Keyboards/AllKeys/6.png" id="7_iqgn1"]
-[ext_resource type="Texture2D" uid="uid://mbl4v4vxu1m7" path="res://Sprites/Keyboards/AllKeys/7.png" id="8_frn2m"]
-[ext_resource type="Texture2D" uid="uid://ctttmr22p5dqm" path="res://Sprites/Keyboards/AllKeys/8.png" id="9_tb26r"]
-[ext_resource type="Texture2D" uid="uid://07475mdgbpsn" path="res://Sprites/Keyboards/AllKeys/9.png" id="10_2lwx6"]
-[ext_resource type="Texture2D" uid="uid://drcdhbhup0cgb" path="res://Sprites/Keyboards/AllKeys/0.png" id="11_gtucu"]
-[ext_resource type="Texture2D" uid="uid://dhv6xkn28d1np" path="res://Sprites/Keyboards/AllKeys/PLUS.png" id="12_s61ne"]
-[ext_resource type="Texture2D" uid="uid://dvnggapi5h7dr" path="res://Sprites/Keyboards/AllKeys/UNDERSCORE.png" id="13_hit82"]
-[ext_resource type="Texture2D" uid="uid://b0qao00t7fg" path="res://Sprites/Keyboards/AllKeys/BACKSPACE.png" id="14_8d15e"]
-[ext_resource type="Texture2D" uid="uid://x1cd6qf6w2bf" path="res://Sprites/Keyboards/AllKeys/TAB.png" id="15_c2mvk"]
-[ext_resource type="Texture2D" uid="uid://d2jic3rvfc8wi" path="res://Sprites/Keyboards/AllKeys/Q.png" id="16_xu46b"]
-[ext_resource type="Texture2D" uid="uid://65mocvj6byqu" path="res://Sprites/Keyboards/AllKeys/W.png" id="17_dgtwv"]
-[ext_resource type="Texture2D" uid="uid://brtmkiovtj07l" path="res://Sprites/Keyboards/AllKeys/E.png" id="18_1y0ag"]
-[ext_resource type="Texture2D" uid="uid://dhsy8gy760h2b" path="res://Sprites/Keyboards/AllKeys/R.png" id="19_d3tug"]
-[ext_resource type="Texture2D" uid="uid://bdwiup22g4yxa" path="res://Sprites/Keyboards/AllKeys/T.png" id="20_recuv"]
-[ext_resource type="Texture2D" uid="uid://dxiyd8h4maess" path="res://Sprites/Keyboards/AllKeys/Y.png" id="21_svi2w"]
-[ext_resource type="Texture2D" uid="uid://bgomn1p82efkd" path="res://Sprites/Keyboards/AllKeys/U.png" id="22_qf08f"]
-[ext_resource type="Texture2D" uid="uid://cvtf3kcoa3r3" path="res://Sprites/Keyboards/AllKeys/I.png" id="23_d4len"]
-[ext_resource type="Texture2D" uid="uid://dht2fuv1xtjsv" path="res://Sprites/Keyboards/AllKeys/O.png" id="24_ans8x"]
-[ext_resource type="Texture2D" uid="uid://dv2xy0wi0ffy4" path="res://Sprites/Keyboards/AllKeys/P.png" id="25_jmoyf"]
-[ext_resource type="Texture2D" uid="uid://havmaxamjj2h" path="res://Sprites/Keyboards/AllKeys/PIPE.png" id="26_538rw"]
-[ext_resource type="Texture2D" uid="uid://cr63wd8v4t1ry" path="res://Sprites/Keyboards/AllKeys/OPENCURLY.png" id="27_qy233"]
-[ext_resource type="Texture2D" uid="uid://ucv8ken7jfdp" path="res://Sprites/Keyboards/AllKeys/ENTER.png" id="28_8xfd3"]
-[ext_resource type="Texture2D" uid="uid://cbj84y0wokxsv" path="res://Sprites/Keyboards/AllKeys/CAPS.png" id="29_xgegp"]
-[ext_resource type="Texture2D" uid="uid://bn05v7785oet3" path="res://Sprites/Keyboards/AllKeys/A.png" id="30_h4o75"]
-[ext_resource type="Texture2D" uid="uid://cuwqpff6xu42" path="res://Sprites/Keyboards/AllKeys/S.png" id="31_qx5yv"]
-[ext_resource type="Texture2D" uid="uid://c2a6c3prtj70d" path="res://Sprites/Keyboards/AllKeys/D.png" id="32_elqor"]
-[ext_resource type="Texture2D" uid="uid://dmd5ssinl1o8b" path="res://Sprites/Keyboards/AllKeys/F.png" id="33_olj42"]
-[ext_resource type="Texture2D" uid="uid://b3up0f78imxmg" path="res://Sprites/Keyboards/AllKeys/G.png" id="34_b8kpe"]
-[ext_resource type="Texture2D" uid="uid://dkge8iuerl8as" path="res://Sprites/Keyboards/AllKeys/H.png" id="35_emlrb"]
-[ext_resource type="Texture2D" uid="uid://dcnwwdtp060md" path="res://Sprites/Keyboards/AllKeys/J.png" id="36_cq5hh"]
-[ext_resource type="Texture2D" uid="uid://dsi4sbyr2yv13" path="res://Sprites/Keyboards/AllKeys/K.png" id="37_3m3l2"]
-[ext_resource type="Texture2D" uid="uid://dljfj30p33nju" path="res://Sprites/Keyboards/AllKeys/L.png" id="38_2e5x3"]
-[ext_resource type="Texture2D" uid="uid://cc6qmnu53mocr" path="res://Sprites/Keyboards/AllKeys/COLON.png" id="39_ic75j"]
-[ext_resource type="Texture2D" uid="uid://ddhdw4e338ey1" path="res://Sprites/Keyboards/AllKeys/QUOTE.png" id="40_rgd6p"]
-[ext_resource type="Texture2D" uid="uid://0178ktdyglxt" path="res://Sprites/Keyboards/AllKeys/CLOSECURLY.png" id="41_4knd6"]
-[ext_resource type="Texture2D" uid="uid://coxy8yolrdnl7" path="res://Sprites/Keyboards/AllKeys/SHIFTALTERNATIVE.png" id="42_jcijg"]
-[ext_resource type="Texture2D" uid="uid://c0fmsqqfsgq55" path="res://Sprites/Keyboards/AllKeys/Z.png" id="43_t4l3h"]
-[ext_resource type="Texture2D" uid="uid://cm28v6jf151rm" path="res://Sprites/Keyboards/AllKeys/X.png" id="44_cnomi"]
-[ext_resource type="Texture2D" uid="uid://batvq2pyl0fru" path="res://Sprites/Keyboards/AllKeys/C.png" id="45_6g82q"]
-[ext_resource type="Texture2D" uid="uid://vk7540rxou22" path="res://Sprites/Keyboards/AllKeys/V.png" id="46_3v44q"]
-[ext_resource type="Texture2D" uid="uid://cyjdt3crwhs2s" path="res://Sprites/Keyboards/AllKeys/B.png" id="47_gr36g"]
-[ext_resource type="Texture2D" uid="uid://c1e3l1xdaxha5" path="res://Sprites/Keyboards/AllKeys/N.png" id="48_3601v"]
-[ext_resource type="Texture2D" uid="uid://cpnd05omaqdu5" path="res://Sprites/Keyboards/AllKeys/M.png" id="49_n0m4w"]
-[ext_resource type="Texture2D" uid="uid://dwm4wfaegkpff" path="res://Sprites/Keyboards/AllKeys/LESSTHAN.png" id="50_p2nbi"]
-[ext_resource type="Texture2D" uid="uid://cr1kj6s0qwx6s" path="res://Sprites/Keyboards/AllKeys/GREATERTHAN.png" id="51_mgse2"]
-[ext_resource type="Texture2D" uid="uid://8gg44d1u1n3h" path="res://Sprites/Keyboards/AllKeys/QUESTIONMARK.png" id="52_o5178"]
-[ext_resource type="Texture2D" uid="uid://hlrgn7nivj52" path="res://Sprites/Keyboards/AllKeys/SHIFTBIGGER.png" id="53_nlm6f"]
-[ext_resource type="Texture2D" uid="uid://4gx7f7sc13eu" path="res://Sprites/Keyboards/AllKeys/CTRL.png" id="54_at3ni"]
-[ext_resource type="Texture2D" uid="uid://d4ivu7u6ykxp3" path="res://Sprites/Keyboards/AllKeys/WINDOWS.png" id="55_3qy0u"]
-[ext_resource type="Texture2D" uid="uid://bgwbmo5ns47nb" path="res://Sprites/Keyboards/AllKeys/ALT.png" id="56_3p3s1"]
-[ext_resource type="Texture2D" uid="uid://da66ta1v01ded" path="res://Sprites/Keyboards/AllKeys/SPACE.png" id="57_qybcj"]
-[ext_resource type="Texture2D" uid="uid://uo54qvoqduxu" path="res://Sprites/Keyboards/AllKeys/ALTGR.png" id="58_gb0kr"]
+[ext_resource type="Texture2D" uid="uid://cnnfmmpcdvv5o" path="res://Sprites/Keyboards/AllKeys/TILDE.png" id="1_irtc4"]
+[ext_resource type="Texture2D" uid="uid://dfatth45tu6jb" path="res://Sprites/Keyboards/AllKeys/1.png" id="2_ngdl4"]
+[ext_resource type="Texture2D" uid="uid://wa5vf20si71o" path="res://Sprites/Keyboards/AllKeys/2.png" id="3_jmvq3"]
+[ext_resource type="Texture2D" uid="uid://bdsmm7ulrwbvb" path="res://Sprites/Keyboards/AllKeys/3.png" id="4_dvxcn"]
+[ext_resource type="Texture2D" uid="uid://1yhxwxo2ispd" path="res://Sprites/Keyboards/AllKeys/4.png" id="5_fn25i"]
+[ext_resource type="Texture2D" uid="uid://dgh16wlyw6d4m" path="res://Sprites/Keyboards/AllKeys/5.png" id="6_55ejx"]
+[ext_resource type="Texture2D" uid="uid://b758oix4brokp" path="res://Sprites/Keyboards/AllKeys/6.png" id="7_h3e5f"]
+[ext_resource type="Texture2D" uid="uid://mbl4v4vxu1m7" path="res://Sprites/Keyboards/AllKeys/7.png" id="8_3cwt3"]
+[ext_resource type="Texture2D" uid="uid://ctttmr22p5dqm" path="res://Sprites/Keyboards/AllKeys/8.png" id="9_u065b"]
+[ext_resource type="Texture2D" uid="uid://07475mdgbpsn" path="res://Sprites/Keyboards/AllKeys/9.png" id="10_ke30a"]
+[ext_resource type="Texture2D" uid="uid://drcdhbhup0cgb" path="res://Sprites/Keyboards/AllKeys/0.png" id="11_lctfc"]
+[ext_resource type="Texture2D" uid="uid://dhv6xkn28d1np" path="res://Sprites/Keyboards/AllKeys/PLUS.png" id="12_0gwst"]
+[ext_resource type="Texture2D" uid="uid://dvnggapi5h7dr" path="res://Sprites/Keyboards/AllKeys/UNDERSCORE.png" id="13_go7xl"]
+[ext_resource type="Texture2D" uid="uid://b0qao00t7fg" path="res://Sprites/Keyboards/AllKeys/BACKSPACE.png" id="14_0ep7b"]
+[ext_resource type="Texture2D" uid="uid://x1cd6qf6w2bf" path="res://Sprites/Keyboards/AllKeys/TAB.png" id="15_bvpd4"]
+[ext_resource type="Texture2D" uid="uid://d2jic3rvfc8wi" path="res://Sprites/Keyboards/AllKeys/Q.png" id="16_lajjo"]
+[ext_resource type="Texture2D" uid="uid://65mocvj6byqu" path="res://Sprites/Keyboards/AllKeys/W.png" id="17_jrksb"]
+[ext_resource type="Texture2D" uid="uid://brtmkiovtj07l" path="res://Sprites/Keyboards/AllKeys/E.png" id="18_qf05d"]
+[ext_resource type="Texture2D" uid="uid://dhsy8gy760h2b" path="res://Sprites/Keyboards/AllKeys/R.png" id="19_mhofg"]
+[ext_resource type="Texture2D" uid="uid://bdwiup22g4yxa" path="res://Sprites/Keyboards/AllKeys/T.png" id="20_4p10s"]
+[ext_resource type="Texture2D" uid="uid://dxiyd8h4maess" path="res://Sprites/Keyboards/AllKeys/Y.png" id="21_1fg83"]
+[ext_resource type="Texture2D" uid="uid://bgomn1p82efkd" path="res://Sprites/Keyboards/AllKeys/U.png" id="22_m4qyy"]
+[ext_resource type="Texture2D" uid="uid://cvtf3kcoa3r3" path="res://Sprites/Keyboards/AllKeys/I.png" id="23_rtkxq"]
+[ext_resource type="Texture2D" uid="uid://dht2fuv1xtjsv" path="res://Sprites/Keyboards/AllKeys/O.png" id="24_t0ogo"]
+[ext_resource type="Texture2D" uid="uid://dv2xy0wi0ffy4" path="res://Sprites/Keyboards/AllKeys/P.png" id="25_pqtp1"]
+[ext_resource type="Texture2D" uid="uid://havmaxamjj2h" path="res://Sprites/Keyboards/AllKeys/PIPE.png" id="26_jo4qv"]
+[ext_resource type="Texture2D" uid="uid://cr63wd8v4t1ry" path="res://Sprites/Keyboards/AllKeys/OPENCURLY.png" id="27_v7sm4"]
+[ext_resource type="Texture2D" uid="uid://ucv8ken7jfdp" path="res://Sprites/Keyboards/AllKeys/ENTER.png" id="28_gpw2y"]
+[ext_resource type="Texture2D" uid="uid://cbj84y0wokxsv" path="res://Sprites/Keyboards/AllKeys/CAPS.png" id="29_oqanw"]
+[ext_resource type="Texture2D" uid="uid://bn05v7785oet3" path="res://Sprites/Keyboards/AllKeys/A.png" id="30_s4g7b"]
+[ext_resource type="Texture2D" uid="uid://cuwqpff6xu42" path="res://Sprites/Keyboards/AllKeys/S.png" id="31_hmsoe"]
+[ext_resource type="Texture2D" uid="uid://c2a6c3prtj70d" path="res://Sprites/Keyboards/AllKeys/D.png" id="32_b3tmh"]
+[ext_resource type="Texture2D" uid="uid://dmd5ssinl1o8b" path="res://Sprites/Keyboards/AllKeys/F.png" id="33_u2rkw"]
+[ext_resource type="Texture2D" uid="uid://b3up0f78imxmg" path="res://Sprites/Keyboards/AllKeys/G.png" id="34_e56nj"]
+[ext_resource type="Texture2D" uid="uid://dkge8iuerl8as" path="res://Sprites/Keyboards/AllKeys/H.png" id="35_5l16c"]
+[ext_resource type="Texture2D" uid="uid://dcnwwdtp060md" path="res://Sprites/Keyboards/AllKeys/J.png" id="36_4mrfr"]
+[ext_resource type="Texture2D" uid="uid://dsi4sbyr2yv13" path="res://Sprites/Keyboards/AllKeys/K.png" id="37_fea8o"]
+[ext_resource type="Texture2D" uid="uid://dljfj30p33nju" path="res://Sprites/Keyboards/AllKeys/L.png" id="38_mbnlo"]
+[ext_resource type="Texture2D" uid="uid://cc6qmnu53mocr" path="res://Sprites/Keyboards/AllKeys/COLON.png" id="39_rqy6o"]
+[ext_resource type="Texture2D" uid="uid://ddhdw4e338ey1" path="res://Sprites/Keyboards/AllKeys/QUOTE.png" id="40_d0log"]
+[ext_resource type="Texture2D" uid="uid://0178ktdyglxt" path="res://Sprites/Keyboards/AllKeys/CLOSECURLY.png" id="41_v7j5p"]
+[ext_resource type="Texture2D" uid="uid://coxy8yolrdnl7" path="res://Sprites/Keyboards/AllKeys/SHIFTALTERNATIVE.png" id="42_7sg57"]
+[ext_resource type="Texture2D" uid="uid://c0fmsqqfsgq55" path="res://Sprites/Keyboards/AllKeys/Z.png" id="43_0r0wi"]
+[ext_resource type="Texture2D" uid="uid://cm28v6jf151rm" path="res://Sprites/Keyboards/AllKeys/X.png" id="44_3l0ws"]
+[ext_resource type="Texture2D" uid="uid://batvq2pyl0fru" path="res://Sprites/Keyboards/AllKeys/C.png" id="45_y6wue"]
+[ext_resource type="Texture2D" uid="uid://vk7540rxou22" path="res://Sprites/Keyboards/AllKeys/V.png" id="46_g4iwy"]
+[ext_resource type="Texture2D" uid="uid://cyjdt3crwhs2s" path="res://Sprites/Keyboards/AllKeys/B.png" id="47_pf5qa"]
+[ext_resource type="Texture2D" uid="uid://c1e3l1xdaxha5" path="res://Sprites/Keyboards/AllKeys/N.png" id="48_kduyh"]
+[ext_resource type="Texture2D" uid="uid://cpnd05omaqdu5" path="res://Sprites/Keyboards/AllKeys/M.png" id="49_k404v"]
+[ext_resource type="Texture2D" uid="uid://dwm4wfaegkpff" path="res://Sprites/Keyboards/AllKeys/LESSTHAN.png" id="50_kdlyx"]
+[ext_resource type="Texture2D" uid="uid://cr1kj6s0qwx6s" path="res://Sprites/Keyboards/AllKeys/GREATERTHAN.png" id="51_eqvjl"]
+[ext_resource type="Texture2D" uid="uid://8gg44d1u1n3h" path="res://Sprites/Keyboards/AllKeys/QUESTIONMARK.png" id="52_q2wfs"]
+[ext_resource type="Texture2D" uid="uid://hlrgn7nivj52" path="res://Sprites/Keyboards/AllKeys/SHIFTBIGGER.png" id="53_sk4h5"]
+[ext_resource type="Texture2D" uid="uid://4gx7f7sc13eu" path="res://Sprites/Keyboards/AllKeys/CTRL.png" id="54_shwco"]
+[ext_resource type="Texture2D" uid="uid://d4ivu7u6ykxp3" path="res://Sprites/Keyboards/AllKeys/WINDOWS.png" id="55_sdcwj"]
+[ext_resource type="Texture2D" uid="uid://bgwbmo5ns47nb" path="res://Sprites/Keyboards/AllKeys/ALT.png" id="56_a4pf3"]
+[ext_resource type="Texture2D" uid="uid://da66ta1v01ded" path="res://Sprites/Keyboards/AllKeys/SPACE.png" id="57_ehw8g"]
+[ext_resource type="Texture2D" uid="uid://uo54qvoqduxu" path="res://Sprites/Keyboards/AllKeys/ALTGR.png" id="58_xbs4q"]
 
 [node name="Keyboard Base" type="Node"]
 
 [node name="0" type="Node" parent="."]
 
 [node name="~" type="Sprite2D" parent="0"]
-texture = ExtResource("1_uhni7")
+texture = ExtResource("1_irtc4")
 centered = false
 region_enabled = true
 region_rect = Rect2(0, 0, 19, 21)
 
 [node name="1" type="Sprite2D" parent="0"]
 position = Vector2(19, 0)
-texture = ExtResource("2_i411e")
+texture = ExtResource("2_ngdl4")
 centered = false
 region_enabled = true
 region_rect = Rect2(0, 0, 19, 21)
 
 [node name="2" type="Sprite2D" parent="0"]
 position = Vector2(38, 0)
-texture = ExtResource("3_85q4x")
+texture = ExtResource("3_jmvq3")
 centered = false
 region_enabled = true
 region_rect = Rect2(0, 0, 19, 21)
 
 [node name="3" type="Sprite2D" parent="0"]
 position = Vector2(57, 0)
-texture = ExtResource("4_n617j")
+texture = ExtResource("4_dvxcn")
 centered = false
 region_enabled = true
 region_rect = Rect2(0, 0, 19, 21)
 
 [node name="4" type="Sprite2D" parent="0"]
 position = Vector2(76, 0)
-texture = ExtResource("5_t71i0")
+texture = ExtResource("5_fn25i")
 centered = false
 region_enabled = true
 region_rect = Rect2(0, 0, 19, 21)
 
 [node name="5" type="Sprite2D" parent="0"]
 position = Vector2(95, 0)
-texture = ExtResource("6_r44sa")
+texture = ExtResource("6_55ejx")
 centered = false
 region_enabled = true
 region_rect = Rect2(0, 0, 19, 21)
 
 [node name="6" type="Sprite2D" parent="0"]
 position = Vector2(114, 0)
-texture = ExtResource("7_iqgn1")
+texture = ExtResource("7_h3e5f")
 centered = false
 region_enabled = true
 region_rect = Rect2(0, 0, 19, 21)
 
 [node name="7" type="Sprite2D" parent="0"]
 position = Vector2(133, 0)
-texture = ExtResource("8_frn2m")
+texture = ExtResource("8_3cwt3")
 centered = false
 region_enabled = true
 region_rect = Rect2(0, 0, 19, 21)
 
 [node name="8" type="Sprite2D" parent="0"]
 position = Vector2(152, 0)
-texture = ExtResource("9_tb26r")
+texture = ExtResource("9_u065b")
 centered = false
 region_enabled = true
 region_rect = Rect2(0, 0, 19, 21)
 
 [node name="9" type="Sprite2D" parent="0"]
 position = Vector2(171, 0)
-texture = ExtResource("10_2lwx6")
+texture = ExtResource("10_ke30a")
 centered = false
 region_enabled = true
 region_rect = Rect2(0, 0, 19, 21)
 
 [node name="0" type="Sprite2D" parent="0"]
 position = Vector2(190, 0)
-texture = ExtResource("11_gtucu")
+texture = ExtResource("11_lctfc")
 centered = false
 region_enabled = true
 region_rect = Rect2(0, 0, 19, 21)
 
 [node name="+" type="Sprite2D" parent="0"]
 position = Vector2(209, 0)
-texture = ExtResource("12_s61ne")
+texture = ExtResource("12_0gwst")
 centered = false
 region_enabled = true
 region_rect = Rect2(0, 0, 19, 21)
 
 [node name="_" type="Sprite2D" parent="0"]
 position = Vector2(228, 0)
-texture = ExtResource("13_hit82")
+texture = ExtResource("13_go7xl")
 centered = false
 region_enabled = true
 region_rect = Rect2(0, 0, 19, 21)
 
 [node name="backspace" type="Sprite2D" parent="0"]
 position = Vector2(247, 0)
-texture = ExtResource("14_8d15e")
+texture = ExtResource("14_0ep7b")
 centered = false
 region_enabled = true
 region_rect = Rect2(0, 0, 53, 21)
@@ -165,7 +165,7 @@ region_rect = Rect2(0, 0, 53, 21)
 [node name="tab" type="Sprite2D" parent="1"]
 z_index = 1
 position = Vector2(0, 15)
-texture = ExtResource("15_c2mvk")
+texture = ExtResource("15_bvpd4")
 centered = false
 region_enabled = true
 region_rect = Rect2(0, 0, 33, 21)
@@ -173,7 +173,7 @@ region_rect = Rect2(0, 0, 33, 21)
 [node name="q" type="Sprite2D" parent="1"]
 z_index = 1
 position = Vector2(33, 15)
-texture = ExtResource("16_xu46b")
+texture = ExtResource("16_lajjo")
 centered = false
 region_enabled = true
 region_rect = Rect2(0, 0, 19, 21)
@@ -181,7 +181,7 @@ region_rect = Rect2(0, 0, 19, 21)
 [node name="w" type="Sprite2D" parent="1"]
 z_index = 1
 position = Vector2(52, 15)
-texture = ExtResource("17_dgtwv")
+texture = ExtResource("17_jrksb")
 centered = false
 region_enabled = true
 region_rect = Rect2(0, 0, 19, 21)
@@ -189,7 +189,7 @@ region_rect = Rect2(0, 0, 19, 21)
 [node name="e" type="Sprite2D" parent="1"]
 z_index = 1
 position = Vector2(71, 15)
-texture = ExtResource("18_1y0ag")
+texture = ExtResource("18_qf05d")
 centered = false
 region_enabled = true
 region_rect = Rect2(0, 0, 19, 21)
@@ -197,7 +197,7 @@ region_rect = Rect2(0, 0, 19, 21)
 [node name="r" type="Sprite2D" parent="1"]
 z_index = 1
 position = Vector2(90, 15)
-texture = ExtResource("19_d3tug")
+texture = ExtResource("19_mhofg")
 centered = false
 region_enabled = true
 region_rect = Rect2(0, 0, 19, 21)
@@ -205,7 +205,7 @@ region_rect = Rect2(0, 0, 19, 21)
 [node name="t" type="Sprite2D" parent="1"]
 z_index = 1
 position = Vector2(109, 15)
-texture = ExtResource("20_recuv")
+texture = ExtResource("20_4p10s")
 centered = false
 region_enabled = true
 region_rect = Rect2(0, 0, 19, 21)
@@ -213,7 +213,7 @@ region_rect = Rect2(0, 0, 19, 21)
 [node name="y" type="Sprite2D" parent="1"]
 z_index = 1
 position = Vector2(128, 15)
-texture = ExtResource("21_svi2w")
+texture = ExtResource("21_1fg83")
 centered = false
 region_enabled = true
 region_rect = Rect2(0, 0, 19, 21)
@@ -221,7 +221,7 @@ region_rect = Rect2(0, 0, 19, 21)
 [node name="u" type="Sprite2D" parent="1"]
 z_index = 1
 position = Vector2(147, 15)
-texture = ExtResource("22_qf08f")
+texture = ExtResource("22_m4qyy")
 centered = false
 region_enabled = true
 region_rect = Rect2(0, 0, 19, 21)
@@ -229,7 +229,7 @@ region_rect = Rect2(0, 0, 19, 21)
 [node name="i" type="Sprite2D" parent="1"]
 z_index = 1
 position = Vector2(166, 15)
-texture = ExtResource("23_d4len")
+texture = ExtResource("23_rtkxq")
 centered = false
 region_enabled = true
 region_rect = Rect2(0, 0, 19, 21)
@@ -237,7 +237,7 @@ region_rect = Rect2(0, 0, 19, 21)
 [node name="o" type="Sprite2D" parent="1"]
 z_index = 1
 position = Vector2(185, 15)
-texture = ExtResource("24_ans8x")
+texture = ExtResource("24_t0ogo")
 centered = false
 region_enabled = true
 region_rect = Rect2(0, 0, 19, 21)
@@ -245,7 +245,7 @@ region_rect = Rect2(0, 0, 19, 21)
 [node name="p" type="Sprite2D" parent="1"]
 z_index = 1
 position = Vector2(204, 15)
-texture = ExtResource("25_jmoyf")
+texture = ExtResource("25_pqtp1")
 centered = false
 region_enabled = true
 region_rect = Rect2(0, 0, 19, 21)
@@ -253,7 +253,7 @@ region_rect = Rect2(0, 0, 19, 21)
 [node name="pipe" type="Sprite2D" parent="1"]
 z_index = 1
 position = Vector2(223, 15)
-texture = ExtResource("26_538rw")
+texture = ExtResource("26_jo4qv")
 centered = false
 region_enabled = true
 region_rect = Rect2(0, 0, 19, 21)
@@ -261,7 +261,7 @@ region_rect = Rect2(0, 0, 19, 21)
 [node name="{" type="Sprite2D" parent="1"]
 z_index = 1
 position = Vector2(242, 15)
-texture = ExtResource("27_qy233")
+texture = ExtResource("27_v7sm4")
 centered = false
 region_enabled = true
 region_rect = Rect2(0, 0, 19, 21)
@@ -269,7 +269,7 @@ region_rect = Rect2(0, 0, 19, 21)
 [node name="enter" type="Sprite2D" parent="1"]
 z_index = 1
 position = Vector2(261, 15)
-texture = ExtResource("28_8xfd3")
+texture = ExtResource("28_gpw2y")
 centered = false
 region_enabled = true
 region_rect = Rect2(0, 0, 39, 36)
@@ -279,7 +279,7 @@ region_rect = Rect2(0, 0, 39, 36)
 [node name="cap" type="Sprite2D" parent="2"]
 z_index = 2
 position = Vector2(0, 30)
-texture = ExtResource("29_xgegp")
+texture = ExtResource("29_oqanw")
 centered = false
 region_enabled = true
 region_rect = Rect2(0, 0, 41, 21)
@@ -287,7 +287,7 @@ region_rect = Rect2(0, 0, 41, 21)
 [node name="a" type="Sprite2D" parent="2"]
 z_index = 2
 position = Vector2(41, 30)
-texture = ExtResource("30_h4o75")
+texture = ExtResource("30_s4g7b")
 centered = false
 region_enabled = true
 region_rect = Rect2(0, 0, 19, 21)
@@ -295,7 +295,7 @@ region_rect = Rect2(0, 0, 19, 21)
 [node name="s" type="Sprite2D" parent="2"]
 z_index = 2
 position = Vector2(60, 30)
-texture = ExtResource("31_qx5yv")
+texture = ExtResource("31_hmsoe")
 centered = false
 region_enabled = true
 region_rect = Rect2(0, 0, 19, 21)
@@ -303,7 +303,7 @@ region_rect = Rect2(0, 0, 19, 21)
 [node name="d" type="Sprite2D" parent="2"]
 z_index = 2
 position = Vector2(79, 30)
-texture = ExtResource("32_elqor")
+texture = ExtResource("32_b3tmh")
 centered = false
 region_enabled = true
 region_rect = Rect2(0, 0, 19, 21)
@@ -311,7 +311,7 @@ region_rect = Rect2(0, 0, 19, 21)
 [node name="f" type="Sprite2D" parent="2"]
 z_index = 2
 position = Vector2(98, 30)
-texture = ExtResource("33_olj42")
+texture = ExtResource("33_u2rkw")
 centered = false
 region_enabled = true
 region_rect = Rect2(0, 0, 19, 21)
@@ -319,7 +319,7 @@ region_rect = Rect2(0, 0, 19, 21)
 [node name="g" type="Sprite2D" parent="2"]
 z_index = 2
 position = Vector2(117, 30)
-texture = ExtResource("34_b8kpe")
+texture = ExtResource("34_e56nj")
 centered = false
 region_enabled = true
 region_rect = Rect2(0, 0, 19, 21)
@@ -327,7 +327,7 @@ region_rect = Rect2(0, 0, 19, 21)
 [node name="h" type="Sprite2D" parent="2"]
 z_index = 2
 position = Vector2(136, 30)
-texture = ExtResource("35_emlrb")
+texture = ExtResource("35_5l16c")
 centered = false
 region_enabled = true
 region_rect = Rect2(0, 0, 19, 21)
@@ -335,7 +335,7 @@ region_rect = Rect2(0, 0, 19, 21)
 [node name="j" type="Sprite2D" parent="2"]
 z_index = 2
 position = Vector2(155, 30)
-texture = ExtResource("36_cq5hh")
+texture = ExtResource("36_4mrfr")
 centered = false
 region_enabled = true
 region_rect = Rect2(0, 0, 19, 21)
@@ -343,7 +343,7 @@ region_rect = Rect2(0, 0, 19, 21)
 [node name="k" type="Sprite2D" parent="2"]
 z_index = 2
 position = Vector2(174, 30)
-texture = ExtResource("37_3m3l2")
+texture = ExtResource("37_fea8o")
 centered = false
 region_enabled = true
 region_rect = Rect2(0, 0, 19, 21)
@@ -351,7 +351,7 @@ region_rect = Rect2(0, 0, 19, 21)
 [node name="l" type="Sprite2D" parent="2"]
 z_index = 2
 position = Vector2(193, 30)
-texture = ExtResource("38_2e5x3")
+texture = ExtResource("38_mbnlo")
 centered = false
 region_enabled = true
 region_rect = Rect2(0, 0, 19, 21)
@@ -359,7 +359,7 @@ region_rect = Rect2(0, 0, 19, 21)
 [node name="colon" type="Sprite2D" parent="2"]
 z_index = 2
 position = Vector2(212, 30)
-texture = ExtResource("39_ic75j")
+texture = ExtResource("39_rqy6o")
 centered = false
 region_enabled = true
 region_rect = Rect2(0, 0, 19, 21)
@@ -367,7 +367,7 @@ region_rect = Rect2(0, 0, 19, 21)
 [node name="quote" type="Sprite2D" parent="2"]
 z_index = 2
 position = Vector2(231, 30)
-texture = ExtResource("40_rgd6p")
+texture = ExtResource("40_d0log")
 centered = false
 region_enabled = true
 region_rect = Rect2(0, 0, 19, 21)
@@ -375,7 +375,7 @@ region_rect = Rect2(0, 0, 19, 21)
 [node name="quote2" type="Sprite2D" parent="2"]
 z_index = 2
 position = Vector2(250, 30)
-texture = ExtResource("41_4knd6")
+texture = ExtResource("41_v7j5p")
 centered = false
 region_enabled = true
 region_rect = Rect2(0, 0, 19, 21)
@@ -385,7 +385,7 @@ region_rect = Rect2(0, 0, 19, 21)
 [node name="left shift" type="Sprite2D" parent="3"]
 z_index = 3
 position = Vector2(0, 45)
-texture = ExtResource("42_jcijg")
+texture = ExtResource("42_7sg57")
 centered = false
 region_enabled = true
 region_rect = Rect2(0, 0, 49, 21)
@@ -393,7 +393,7 @@ region_rect = Rect2(0, 0, 49, 21)
 [node name="z" type="Sprite2D" parent="3"]
 z_index = 3
 position = Vector2(49, 45)
-texture = ExtResource("43_t4l3h")
+texture = ExtResource("43_0r0wi")
 centered = false
 region_enabled = true
 region_rect = Rect2(0, 0, 19, 21)
@@ -401,7 +401,7 @@ region_rect = Rect2(0, 0, 19, 21)
 [node name="x" type="Sprite2D" parent="3"]
 z_index = 3
 position = Vector2(68, 45)
-texture = ExtResource("44_cnomi")
+texture = ExtResource("44_3l0ws")
 centered = false
 region_enabled = true
 region_rect = Rect2(0, 0, 19, 21)
@@ -409,7 +409,7 @@ region_rect = Rect2(0, 0, 19, 21)
 [node name="c" type="Sprite2D" parent="3"]
 z_index = 3
 position = Vector2(87, 45)
-texture = ExtResource("45_6g82q")
+texture = ExtResource("45_y6wue")
 centered = false
 region_enabled = true
 region_rect = Rect2(0, 0, 19, 21)
@@ -417,7 +417,7 @@ region_rect = Rect2(0, 0, 19, 21)
 [node name="v" type="Sprite2D" parent="3"]
 z_index = 3
 position = Vector2(106, 45)
-texture = ExtResource("46_3v44q")
+texture = ExtResource("46_g4iwy")
 centered = false
 region_enabled = true
 region_rect = Rect2(0, 0, 19, 21)
@@ -425,7 +425,7 @@ region_rect = Rect2(0, 0, 19, 21)
 [node name="b" type="Sprite2D" parent="3"]
 z_index = 3
 position = Vector2(125, 45)
-texture = ExtResource("47_gr36g")
+texture = ExtResource("47_pf5qa")
 centered = false
 region_enabled = true
 region_rect = Rect2(0, 0, 19, 21)
@@ -433,7 +433,7 @@ region_rect = Rect2(0, 0, 19, 21)
 [node name="n" type="Sprite2D" parent="3"]
 z_index = 3
 position = Vector2(144, 45)
-texture = ExtResource("48_3601v")
+texture = ExtResource("48_kduyh")
 centered = false
 region_enabled = true
 region_rect = Rect2(0, 0, 19, 21)
@@ -441,7 +441,7 @@ region_rect = Rect2(0, 0, 19, 21)
 [node name="m" type="Sprite2D" parent="3"]
 z_index = 3
 position = Vector2(163, 45)
-texture = ExtResource("49_n0m4w")
+texture = ExtResource("49_k404v")
 centered = false
 region_enabled = true
 region_rect = Rect2(0, 0, 19, 21)
@@ -449,7 +449,7 @@ region_rect = Rect2(0, 0, 19, 21)
 [node name="<" type="Sprite2D" parent="3"]
 z_index = 3
 position = Vector2(182, 45)
-texture = ExtResource("50_p2nbi")
+texture = ExtResource("50_kdlyx")
 centered = false
 region_enabled = true
 region_rect = Rect2(0, 0, 19, 21)
@@ -457,7 +457,7 @@ region_rect = Rect2(0, 0, 19, 21)
 [node name=">" type="Sprite2D" parent="3"]
 z_index = 3
 position = Vector2(201, 45)
-texture = ExtResource("51_mgse2")
+texture = ExtResource("51_eqvjl")
 centered = false
 region_enabled = true
 region_rect = Rect2(0, 0, 19, 21)
@@ -465,7 +465,7 @@ region_rect = Rect2(0, 0, 19, 21)
 [node name="question mark" type="Sprite2D" parent="3"]
 z_index = 3
 position = Vector2(220, 45)
-texture = ExtResource("52_o5178")
+texture = ExtResource("52_q2wfs")
 centered = false
 region_enabled = true
 region_rect = Rect2(0, 0, 19, 21)
@@ -473,7 +473,7 @@ region_rect = Rect2(0, 0, 19, 21)
 [node name="right shift" type="Sprite2D" parent="3"]
 z_index = 3
 position = Vector2(239, 45)
-texture = ExtResource("53_nlm6f")
+texture = ExtResource("53_sk4h5")
 centered = false
 region_enabled = true
 region_rect = Rect2(0, 0, 61, 21)
@@ -483,7 +483,7 @@ region_rect = Rect2(0, 0, 61, 21)
 [node name="left cntl" type="Sprite2D" parent="4"]
 z_index = 4
 position = Vector2(0, 60)
-texture = ExtResource("54_at3ni")
+texture = ExtResource("54_shwco")
 centered = false
 region_enabled = true
 region_rect = Rect2(0, 0, 41, 21)
@@ -491,7 +491,7 @@ region_rect = Rect2(0, 0, 41, 21)
 [node name="left win" type="Sprite2D" parent="4"]
 z_index = 4
 position = Vector2(41, 60)
-texture = ExtResource("55_3qy0u")
+texture = ExtResource("55_sdcwj")
 centered = false
 region_enabled = true
 region_rect = Rect2(0, 0, 19, 21)
@@ -499,7 +499,7 @@ region_rect = Rect2(0, 0, 19, 21)
 [node name="left alt" type="Sprite2D" parent="4"]
 z_index = 4
 position = Vector2(60, 60)
-texture = ExtResource("56_3p3s1")
+texture = ExtResource("56_a4pf3")
 centered = false
 region_enabled = true
 region_rect = Rect2(0, 0, 33, 21)
@@ -507,7 +507,7 @@ region_rect = Rect2(0, 0, 33, 21)
 [node name="space" type="Sprite2D" parent="4"]
 z_index = 4
 position = Vector2(93, 60)
-texture = ExtResource("57_qybcj")
+texture = ExtResource("57_ehw8g")
 centered = false
 region_enabled = true
 region_rect = Rect2(0, 0, 98, 21)
@@ -515,7 +515,7 @@ region_rect = Rect2(0, 0, 98, 21)
 [node name="right alt" type="Sprite2D" parent="4"]
 z_index = 4
 position = Vector2(191, 60)
-texture = ExtResource("58_gb0kr")
+texture = ExtResource("58_xbs4q")
 centered = false
 region_enabled = true
 region_rect = Rect2(0, 0, 49, 21)
@@ -523,7 +523,7 @@ region_rect = Rect2(0, 0, 49, 21)
 [node name="right win" type="Sprite2D" parent="4"]
 z_index = 4
 position = Vector2(240, 60)
-texture = ExtResource("55_3qy0u")
+texture = ExtResource("55_sdcwj")
 centered = false
 region_enabled = true
 region_rect = Rect2(0, 0, 19, 21)
@@ -531,7 +531,7 @@ region_rect = Rect2(0, 0, 19, 21)
 [node name="right cntl" type="Sprite2D" parent="4"]
 z_index = 4
 position = Vector2(259, 60)
-texture = ExtResource("54_at3ni")
+texture = ExtResource("54_shwco")
 centered = false
 region_enabled = true
 region_rect = Rect2(0, 0, 41, 21)
