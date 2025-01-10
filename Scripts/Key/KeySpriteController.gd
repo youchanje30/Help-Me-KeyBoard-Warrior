@@ -1,13 +1,10 @@
 extends Node
-class_name key_controller
+class_name key_sprite_controller
 
 @export var key_texture : Texture2D
 @export var sprite : Sprite2D
 
 var region_x_size : int = 0
-
-
-
 
 func _ready() -> void:
 	set_sprite_region()
