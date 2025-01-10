@@ -17,7 +17,7 @@ config/icon="res://icon.svg"
 
 [autoload]
 
-InputManager="*res://Scenes/input_manager.tscn"
+InputManager="*res://Scenes/Managers/input_manager.tscn"
 KeyboardController="*res://Scenes/keyboard_controller.tscn"
 
 [rendering]

@@ -1,4 +1,4 @@
-[gd_scene load_steps=3 format=3 uid="uid://bq3lmouvg7iih"]
+[gd_scene load_steps=3 format=3 uid="uid://qfbo8ct3icp7"]
 
 [ext_resource type="Script" path="res://Scripts/Key/KeySpriteController.gd" id="1_68b1b"]
 [ext_resource type="Texture2D" uid="uid://drcdhbhup0cgb" path="res://Sprites/Keyboards/AllKeys/0.png" id="2_og4ib"]
