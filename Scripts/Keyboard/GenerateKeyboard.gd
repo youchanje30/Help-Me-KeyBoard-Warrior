@@ -27,11 +27,6 @@ func set_keyboard():
 	var cnt = 0
 	for layer in layers:
 		for i in range(layer.size()):
-			#var key = key_prefabs.instantiate()
-			#add_child(key)
-			#key.set_texture(layer[i])
-			#key.set_z_index(cnt+1)
-			#key.global_position = off_set_pos[cnt] + Vector2(19 * i, 0)
 			var key = generate_key(layer[i], cnt+1, off_set_pos[cnt] + Vector2(19 * i, 0))
 			KeyboardController.add_key(key_list[cnt][i].to_ascii_buffer()[0]  - 65, key)
 		cnt += 1
