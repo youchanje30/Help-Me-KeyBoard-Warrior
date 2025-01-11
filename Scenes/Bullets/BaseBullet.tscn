@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://blgvy0vqcx21l"]
+
+[ext_resource type="Script" path="res://Scripts/Bullets/BaseBullet.gd" id="1_ni34v"]
+[ext_resource type="Texture2D" uid="uid://by0qhooggm6he" path="res://Sprites/Bullets/bullet.png" id="1_t8tlh"]
+
+[node name="BaseBullet" type="Node2D" node_paths=PackedStringArray("sprite")]
+script = ExtResource("1_ni34v")
+sprite = NodePath("Sprite2D")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_t8tlh")

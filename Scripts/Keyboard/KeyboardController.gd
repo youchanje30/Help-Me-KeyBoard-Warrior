@@ -27,10 +27,23 @@ func buy_key(index:int):
 	key_list[index].buy_key()
 
 func input_key(index: int, is_pressed : bool):
-	key_list[index].down_key()
-	cur_key_list.append(index)
+	if key_list[index].down_key():
+		cur_key_list.append(index)
 
 func reset_key():
-	while not cur_key_list.is_empty():
-		key_list[cur_key_list.pop_back()].up_key()
+	#while not cur_key_list.is_empty():
+		#var index = cur_key_list.pop_back()
+		#key_list[index].up_key()
+		#key_list[index].shoot_key(randf_range(0, 360), 100)
+	for index in cur_key_list:
+		key_list[index].up_key()
+		key_list[index].shoot_key(randf_range(0, 360), 100)
+	cur_key_list.resize(0)
 #endregion
+
+
+var command_base = preload("res://Scenes/Commands/BaseCommand.tscn")
+func GetRandomCommad():
+	var command = command_base.instantiate()
+	add_child(command)
+	return command
