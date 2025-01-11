@@ -7,7 +7,7 @@ extends Node
 @export var off_set_pos = [Vector2(33, 15), Vector2(41, 30), Vector2(49, 45)]
 
 var key_base = preload("res://Scenes/keyboards/keyboard_only_empty_keys.tscn")
-var key_prefabs = preload("res://Scenes/testkey.tscn")
+var key_prefabs = preload("res://Scenes/Keys/key_sprite_controller.tscn")
 
 # it will fix
 var key_list = [["Q","W","E","R","T","Y","U","I","O","P"],

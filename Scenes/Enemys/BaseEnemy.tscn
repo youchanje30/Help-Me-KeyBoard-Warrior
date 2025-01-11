@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://bb0frud7agqpy"]
+
+[ext_resource type="Script" path="res://Scripts/Enemys/BaseEnemy.gd" id="1_2jx4x"]
+[ext_resource type="Texture2D" uid="uid://drcdhbhup0cgb" path="res://Sprites/Keyboards/AllKeys/0.png" id="2_ky3xn"]
+
+[node name="BaseEnemy" type="Node2D"]
+script = ExtResource("1_2jx4x")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_ky3xn")
+centered = false
+region_enabled = true
+region_rect = Rect2(0, 0, 19, 21)

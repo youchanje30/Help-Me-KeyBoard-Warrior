@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://qfbo8ct3icp7"]
+
+[ext_resource type="Script" path="res://Scripts/Key/KeySpriteController.gd" id="1_g8fon"]
+[ext_resource type="Texture2D" uid="uid://drcdhbhup0cgb" path="res://Sprites/Keyboards/AllKeys/0.png" id="2_geabb"]
+
+[node name="key_sprite_controller" type="Node2D" node_paths=PackedStringArray("sprite")]
+script = ExtResource("1_g8fon")
+sprite = NodePath("key_sprite")
+
+[node name="key_sprite" type="Sprite2D" parent="."]
+texture = ExtResource("2_geabb")
+centered = false
+region_enabled = true
+region_rect = Rect2(0, 0, 19, 21)
