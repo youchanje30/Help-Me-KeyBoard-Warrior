@@ -23,7 +23,7 @@ EmenyController="*res://Scripts/Managers/EmenyController.gd"
 
 [display]
 
-window/size/viewport_width=540
+window/size/viewport_width=800
 window/size/viewport_height=800
 
 [rendering]

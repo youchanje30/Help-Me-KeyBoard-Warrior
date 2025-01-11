@@ -4,8 +4,14 @@ var key_list : Array[IKey]
 var cur_key_list : Array[int] = []
 var nonekey = preload("res://Scenes/Keys/nonekey.tscn")
 
+var arrow_input = preload("res://Scenes/Arrow.tscn")
+var arrow
+
 func _ready() -> void:
 	key_list.resize(27)
+	arrow = arrow_input.instantiate()
+	add_child(arrow)
+	arrow.global_position = Vector2.ZERO
 
 
 
@@ -33,7 +39,7 @@ func input_key(index: int, is_pressed : bool):
 func reset_key():
 	for index in cur_key_list:
 		key_list[index].up_key()
-		key_list[index].shoot_key(-90, 100)
+		key_list[index].shoot_key(arrow.angle, 100)
 	cur_key_list.resize(0)
 #endregion
 

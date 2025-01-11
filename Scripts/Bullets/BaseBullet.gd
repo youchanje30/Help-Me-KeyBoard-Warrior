@@ -9,7 +9,7 @@ func shoot(angle : float=0, force : float=0):
 	super.shoot(angle, force)
 	_angle = angle
 	_force = force
-	sprite.rotate(deg_to_rad(-_angle))
+	set_rotation(deg_to_rad(-_angle))
 
 func move(delta):
 	#_force = clampf(_force-delta, 1, 5)
