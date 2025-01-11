@@ -9,10 +9,10 @@ func shoot(angle : float=0, force : float=0):
 	super.shoot(angle, force)
 	_angle = angle
 	_force = force
-	sprite.set_rotation(_angle)
-	print(_angle)
+	sprite.rotate(deg_to_rad(-_angle))
 
 func move(delta):
-	_force = clampf(_force-delta, 1, 5)
-	var vec = Vector2(cos(_angle), sin(_angle))
+	#_force = clampf(_force-delta, 1, 5)
+	var rad = deg_to_rad(-_angle)
+	var vec = Vector2(cos(rad), sin(rad)).normalized()
 	translate(vec * delta * speed * _force)

@@ -21,6 +21,11 @@ InputManager="*res://Scenes/Managers/input_manager.tscn"
 KeyboardController="*res://Scenes/keyboard_controller.tscn"
 EmenyController="*res://Scripts/Managers/EmenyController.gd"
 
+[display]
+
+window/size/viewport_width=540
+window/size/viewport_height=800
+
 [rendering]
 
 textures/canvas_textures/default_texture_filter=0
