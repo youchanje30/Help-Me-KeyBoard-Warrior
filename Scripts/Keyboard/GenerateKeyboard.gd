@@ -1,4 +1,5 @@
 extends Node2D
+class_name GenerateKeyboard
 
 @export var qwer_layer : Array[Texture2D]
 @export var asdf_layer : Array[Texture2D]

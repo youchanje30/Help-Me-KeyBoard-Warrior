@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://cbkfpumh27t1n"]
+[gd_scene load_steps=3 format=3 uid="uid://cbkfpumh27t1n"]
 
 [ext_resource type="PackedScene" uid="uid://d2mgkbc7a06ri" path="res://Scenes/keyboard.tscn" id="1_7ms1x"]
+[ext_resource type="PackedScene" uid="uid://m6tseodvlm4g" path="res://Scenes/Keys/SpecificKeys/EnterKey.tscn" id="2_fcrxf"]
 
 [node name="TestMain" type="Node"]
 
@@ -8,3 +9,6 @@
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(0, 200)
+
+[node name="EnterKey" parent="." node_paths=PackedStringArray("generator") instance=ExtResource("2_fcrxf")]
+generator = NodePath("../Keyboard")

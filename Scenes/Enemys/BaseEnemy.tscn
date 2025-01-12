@@ -1,4 +1,4 @@
-[gd_scene load_steps=4 format=3 uid="uid://bb0frud7agqpy"]
+[gd_scene load_steps=7 format=3 uid="uid://bb0frud7agqpy"]
 
 [ext_resource type="Script" path="res://Scripts/Enemys/BaseEnemy.gd" id="1_2jx4x"]
 [ext_resource type="Texture2D" uid="uid://drcdhbhup0cgb" path="res://Sprites/Keyboards/AllKeys/0.png" id="2_ky3xn"]
@@ -6,8 +6,46 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_44i8h"]
 size = Vector2(19, 21)
 
-[node name="BaseEnemy" type="Node2D"]
+[sub_resource type="Animation" id="Animation_36ghf"]
+resource_name = "Hurt"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.05, 0.4),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 0.260006, 0.200835, 1), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_iyrhp"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_ppm2c"]
+_data = {
+"Hurt": SubResource("Animation_36ghf"),
+"RESET": SubResource("Animation_iyrhp")
+}
+
+[node name="BaseEnemy" type="Node2D" node_paths=PackedStringArray("anim")]
 script = ExtResource("1_2jx4x")
+anim = NodePath("Animation Player")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("2_ky3xn")
@@ -21,3 +59,9 @@ monitoring = false
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 position = Vector2(9.5, 10.5)
 shape = SubResource("RectangleShape2D_44i8h")
+
+[node name="Animation Player" type="AnimationPlayer" parent="."]
+deterministic = true
+libraries = {
+"": SubResource("AnimationLibrary_ppm2c")
+}

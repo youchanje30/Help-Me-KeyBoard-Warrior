@@ -7,15 +7,20 @@ var nonekey = preload("res://Scenes/Keys/nonekey.tscn")
 var arrow_input = preload("res://Scenes/Arrow.tscn")
 var arrow
 
+var enter : key_sprite_controller
+
 func _ready() -> void:
 	key_list.resize(27)
 	arrow = arrow_input.instantiate()
 	add_child(arrow)
 	arrow.global_position = Vector2.ZERO
 
+func add_enter_key(key_sprite:key_sprite_controller):
+	enter = key_sprite
 
 
 #region key controll
+
 func add_key(index:int, key_sprite:key_sprite_controller):
 	var key = nonekey.instantiate()
 	add_child(key)
@@ -37,6 +42,8 @@ func input_key(index: int, is_pressed : bool):
 		cur_key_list.append(index)
 
 func reset_key():
+	if enter != null: enter.down_up_btn()
+
 	for index in cur_key_list:
 		key_list[index].up_key()
 		key_list[index].shoot_key(arrow.angle, 100)

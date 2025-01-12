@@ -39,6 +39,12 @@ func set_sprite_region():
 
 
 #region Change Sprite
+func down_up_btn():
+	press_btn()
+	await get_tree().create_timer(0.05).timeout
+	disable_btn()
+	
+
 func up_btn()->void:
 	sprite.region_rect.position = Vector2(region_x_size*2, 0)
 

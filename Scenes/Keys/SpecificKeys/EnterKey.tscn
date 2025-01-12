@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://m6tseodvlm4g"]
+
+[ext_resource type="Script" path="res://Scripts/Key/SpecificKey/EnterKey.gd" id="1_d210a"]
+[ext_resource type="Texture2D" uid="uid://cqoob2l7d7h2e" path="res://Sprites/Keyboards/EmptyKeys/EMPTY117.png" id="2_gdou0"]
+
+[node name="EnterKey" type="Node"]
+script = ExtResource("1_d210a")
+texture = ExtResource("2_gdou0")
+z_index = 1
+offset = Vector2(261, 15)
