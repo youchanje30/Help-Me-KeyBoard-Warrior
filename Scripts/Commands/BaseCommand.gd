@@ -4,6 +4,7 @@ var bullet_base = preload("res://Scenes/Bullets/BaseBullet.tscn")
 
 func set_command()->void: pass
 func execute(angle : float = 0, force : float = 0, damage : float = 0)->void:
+	super.execute(angle, force, damage)
 	var bullet = bullet_base.instantiate()
 	add_child(bullet)
 	

@@ -1,4 +1,4 @@
-extends Node
+extends Node2D
 
 @export var qwer_layer : Array[Texture2D]
 @export var asdf_layer : Array[Texture2D]
@@ -16,6 +16,7 @@ var key_list = [["Q","W","E","R","T","Y","U","I","O","P"],
 
 func _ready() -> void:
 	set_keyboard()
+	global_position = Vector2(-100, 400)
 
 func _process(delta: float) -> void:
 	pass

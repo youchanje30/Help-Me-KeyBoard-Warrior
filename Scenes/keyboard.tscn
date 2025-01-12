@@ -28,7 +28,7 @@
 [ext_resource type="Texture2D" uid="uid://c1e3l1xdaxha5" path="res://Sprites/Keyboards/AllKeys/N.png" id="39_jimsv"]
 [ext_resource type="Texture2D" uid="uid://cpnd05omaqdu5" path="res://Sprites/Keyboards/AllKeys/M.png" id="40_km7p5"]
 
-[node name="Keyboard" type="Node"]
+[node name="Keyboard" type="Node2D"]
 script = ExtResource("1_vc5ct")
 qwer_layer = Array[Texture2D]([ExtResource("13_jqhdm"), ExtResource("14_84fio"), ExtResource("15_pd4c4"), ExtResource("16_axo3y"), ExtResource("17_wg82k"), ExtResource("18_n3la4"), ExtResource("19_5rkjd"), ExtResource("20_bjj0d"), ExtResource("22_2t6y3"), ExtResource("12_doyp5")])
 asdf_layer = Array[Texture2D]([ExtResource("24_dt8ib"), ExtResource("25_h7yu3"), ExtResource("26_y45ew"), ExtResource("27_ueno0"), ExtResource("28_1is68"), ExtResource("29_8jk2s"), ExtResource("30_nsnjf"), ExtResource("31_resor"), ExtResource("32_5x21j")])

@@ -1,14 +1,23 @@
-[gd_scene load_steps=3 format=3 uid="uid://qfbo8ct3icp7"]
+[gd_scene load_steps=4 format=3 uid="uid://qfbo8ct3icp7"]
 
 [ext_resource type="Script" path="res://Scripts/Key/KeySpriteController.gd" id="1_g8fon"]
 [ext_resource type="Texture2D" uid="uid://drcdhbhup0cgb" path="res://Sprites/Keyboards/AllKeys/0.png" id="2_geabb"]
+[ext_resource type="Texture2D" uid="uid://hq35w0g8ipvb" path="res://Sprites/Keyboards/BtnHighlight.png" id="3_moq36"]
 
-[node name="key_sprite_controller" type="Node2D" node_paths=PackedStringArray("sprite")]
+[node name="key_sprite_controller" type="Node2D" node_paths=PackedStringArray("sprite", "highlight_sprite")]
 script = ExtResource("1_g8fon")
 sprite = NodePath("key_sprite")
+highlight_sprite = NodePath("highlight_sprite")
+unown_modulate = Color(0.513233, 0.513233, 0.513233, 1)
 
 [node name="key_sprite" type="Sprite2D" parent="."]
 texture = ExtResource("2_geabb")
 centered = false
 region_enabled = true
 region_rect = Rect2(0, 0, 19, 21)
+
+[node name="highlight_sprite" type="Sprite2D" parent="."]
+visible = false
+modulate = Color(1, 1, 1, 0.462745)
+texture = ExtResource("3_moq36")
+centered = false

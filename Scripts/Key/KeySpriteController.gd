@@ -3,6 +3,10 @@ class_name key_sprite_controller
 
 @export var key_texture : Texture2D
 @export var sprite : Sprite2D
+@export var highlight_sprite : Sprite2D
+
+@export var own_modulate : Color = Color.WHITE
+@export var unown_modulate : Color = Color.BLACK
 
 var region_x_size : int = 0
 
@@ -12,6 +16,9 @@ func _ready() -> void:
 #func _process(delta: float) -> void:
 	#pass
 
+func own_setting(is_own : bool):
+	sprite.modulate = own_modulate if is_own else unown_modulate
+	highlight_effect(is_own)
 
 func set_texture(text):
 	key_texture = text
@@ -45,4 +52,7 @@ func disable_btn()->void:
 	up_btn()
 	await get_tree().create_timer(0.05).timeout
 	sprite.region_rect.position = Vector2.ZERO
+
+func highlight_effect(is_highlight:bool)->void:
+	highlight_sprite.visible = is_highlight
 #endregion
