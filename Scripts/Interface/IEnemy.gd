@@ -4,7 +4,8 @@ class_name IEnemy
 var max_hp : float = 10
 var cur_hp
 
-func _ready() -> void: pass
+func _ready() -> void:
+	cur_hp = max_hp
 func _process(delta: float) -> void:
 	move(delta)
 
@@ -14,6 +15,6 @@ func move(delta)->void: pass
 
 
 #region Damage Process
-func get_damage(): pass
+func get_damage(damage : float): pass
 
 #endregion

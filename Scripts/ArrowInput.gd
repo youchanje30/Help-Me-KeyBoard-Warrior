@@ -1,7 +1,7 @@
 extends Node2D
 
 var angle : float = 0 
-var speed = 30
+var speed = 120
 func _ready() -> void:
 	rotate(0)
 

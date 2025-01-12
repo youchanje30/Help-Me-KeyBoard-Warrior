@@ -14,7 +14,10 @@ sprite = NodePath("Sprite2D")
 texture = ExtResource("1_t8tlh")
 
 [node name="Area2D" type="Area2D" parent="."]
+monitorable = false
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 position = Vector2(-3, -2)
 shape = SubResource("RectangleShape2D_u8ibm")
+
+[connection signal="area_entered" from="Area2D" to="." method="area_enter"]

@@ -20,7 +20,7 @@ func add_key(index:int, key_sprite:key_sprite_controller):
 	var key = nonekey.instantiate()
 	add_child(key)
 	key_list[index] = key
-	key.set_key(key_sprite)
+	key.set_key(index, key_sprite)
 
 	# 50% to buy
 	if randi_range(0, 1) == 0: buy_key(index)

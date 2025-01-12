@@ -1,13 +1,15 @@
 extends Node
 class_name IKey
 
+var _index : int = 0
 var command : key_command
 var _sprite_controller : key_sprite_controller
 var is_pressed : bool = false
 var is_owned : bool = false
 
-func set_key(sprite_controller : key_sprite_controller):
+func set_key(index : int, sprite_controller : key_sprite_controller):
 	_sprite_controller = sprite_controller
+	_index = index
 
 func buy_key():
 	is_owned = true
@@ -34,5 +36,5 @@ func down_key():
 
 func shoot_key(angle, force):
 	if not is_owned: return
-	command.execute(angle, force)
+	command.execute(angle, force, DamageController.GetDamage(_index))
 	

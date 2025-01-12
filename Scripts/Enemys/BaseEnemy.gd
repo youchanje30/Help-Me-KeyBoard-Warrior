@@ -9,3 +9,8 @@ func _ready() -> void:
 
 func move(delta):
 	translate(move_vec * speed * delta)
+
+func get_damage(damage : float):
+	cur_hp -= damage
+	if cur_hp <= 0:
+		self.queue_free()
