@@ -17,4 +17,4 @@ func _ready() -> void:
 
 
 func get_random_enemy_pos():
-	return enemys[randi_range(0, enemys.size())].position
+	return enemys[randi_range(0, enemys.size()-1)].position

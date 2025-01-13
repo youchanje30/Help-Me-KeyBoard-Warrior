@@ -51,8 +51,10 @@ func reset_key():
 #endregion
 
 
-var command_base = preload("res://Scenes/Commands/BaseCommand.tscn")
+#var command_base = preload("res://Scenes/Commands/BaseCommand.tscn")
+var command_list = [preload("res://Scenes/Commands/BaseCommand.tscn"),
+preload("res://Scenes/Commands/AutoTargetCommand.tscn")]
 func GetRandomCommad():
-	var command = command_base.instantiate()
+	var command = command_list[randi_range(0, command_list.size()-1)].instantiate()
 	add_child(command)
 	return command

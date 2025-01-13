@@ -19,7 +19,7 @@ config/icon="res://icon.svg"
 
 InputManager="*res://Scenes/Managers/input_manager.tscn"
 KeyboardController="*res://Scenes/keyboard_controller.tscn"
-EmenyController="*res://Scripts/Managers/EmenyController.gd"
+EnemyController="*res://Scripts/Managers/EnemyController.gd"
 DamageController="*res://Scripts/Managers/DamageController.gd"
 
 [display]

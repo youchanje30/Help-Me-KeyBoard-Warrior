@@ -6,9 +6,10 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_u8ibm"]
 size = Vector2(10, 5)
 
-[node name="BaseBullet" type="Node2D" node_paths=PackedStringArray("sprite")]
+[node name="BaseBullet" type="Node2D" node_paths=PackedStringArray("sprite", "area")]
 script = ExtResource("1_ni34v")
 sprite = NodePath("Sprite2D")
+area = NodePath("Area2D")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("1_t8tlh")
@@ -19,5 +20,3 @@ monitorable = false
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 position = Vector2(-3, -2)
 shape = SubResource("RectangleShape2D_u8ibm")
-
-[connection signal="area_entered" from="Area2D" to="." method="area_enter"]
