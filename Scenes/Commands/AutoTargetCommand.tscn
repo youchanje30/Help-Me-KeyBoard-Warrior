@@ -1,7 +1,0 @@
-[gd_scene load_steps=2 format=3 uid="uid://bijlur2wtnpmf"]
-
-[ext_resource type="Script" path="res://Scripts/Commands/AutoTargetCommand.gd" id="1_0u4ag"]
-
-[node name="AutoTargetCommand" type="Node"]
-script = ExtResource("1_0u4ag")
-cool_time = 1.5
