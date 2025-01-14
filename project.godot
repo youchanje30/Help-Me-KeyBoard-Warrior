@@ -21,6 +21,7 @@ InputManager="*res://Scenes/Managers/input_manager.tscn"
 KeyboardController="*res://Scenes/keyboard_controller.tscn"
 EnemyController="*res://Scripts/Managers/EnemyController.gd"
 DamageController="*res://Scripts/Managers/DamageController.gd"
+EffectManager="*res://Scripts/Managers/EffectManager.gd"
 
 [display]
 

@@ -26,5 +26,6 @@ func damage_effect():
 	anim.play("Hurt")
 
 func remove():
+	EffectManager.SetEffect(0, self.global_position)
 	EnemyController.Remove_Enemy(self)
 #endregion

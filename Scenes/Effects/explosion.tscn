@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://barluy6tr3pur"]
 
-[ext_resource type="Texture2D" uid="uid://1pdduxeff8ys" path="res://Sprites/Keyboards/WhiteBtn.png" id="1_mbvlp"]
+[ext_resource type="Script" path="res://Scripts/Effects/Effect.gd" id="1_fs51t"]
 
 [sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_huhg3"]
 particle_flag_disable_z = true
@@ -10,8 +10,14 @@ initial_velocity_max = 50.0
 gravity = Vector3(0, 0, 0)
 
 [node name="Explosion" type="GPUParticles2D"]
-amount = 30
+modulate = Color(1, 0.117647, 0.168627, 1)
+emitting = false
+amount = 45
 process_material = SubResource("ParticleProcessMaterial_huhg3")
-texture = ExtResource("1_mbvlp")
 lifetime = 0.5
+one_shot = true
 explosiveness = 1.0
+script = ExtResource("1_fs51t")
+
+[connection signal="finished" from="." to="." method="_on_finished"]
+[connection signal="visibility_changed" from="." to="." method="_on_visibility_changed"]
