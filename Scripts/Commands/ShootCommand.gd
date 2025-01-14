@@ -1,8 +1,8 @@
 extends key_command
 
 
-func execute(angle : float = 0, force : float = 0, damage : float = 0)->void:
-	super.execute(angle, force, damage)
+func execute(angle : float = 0, damage : float = 0)->void:#force : float = 0, damage : float = 0)->void:
+	super.execute(angle, damage)
 	
 	for i in range(_data.spawn_data.size()):
 		var path = _data.spawn_data[i]

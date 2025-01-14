@@ -5,7 +5,7 @@ extends IBullet
 
 var _angle : float
 var _force : float
-var speed : float = 10
+#var speed : float = 10
 
 
 func shoot(angle : float=0, force : float=0, damage : float = 0):
@@ -18,4 +18,4 @@ func move(delta):
 	#_force = clampf(_force-delta, 1, 5)
 	var rad = deg_to_rad(-_angle)
 	var vec = Vector2(cos(rad), sin(rad)).normalized()
-	translate(vec * delta * speed * _force)
+	translate(vec * delta * _force) # speed * _force)

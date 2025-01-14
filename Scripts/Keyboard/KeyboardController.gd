@@ -46,7 +46,7 @@ func reset_key():
 
 	for index in cur_key_list:
 		key_list[index].up_key()
-		key_list[index].shoot_key(arrow.angle, 100)
+		key_list[index].shoot_key(arrow.angle)
 	cur_key_list.resize(0)
 #endregion
 

@@ -5,5 +5,5 @@
 [resource]
 script = ExtResource("1_x4o2i")
 spawn_data = Array[String](["res://Scenes/Bullets/AutoBullet.tscn"])
-data = [[null]]
+force_data = Array[float]([25.0])
 coolTime = 3.0

@@ -41,6 +41,7 @@ func down_key():
 	_sprite_controller.press_btn()
 	return true
 
-func shoot_key(angle, force):
+func shoot_key(angle):#, force):
 	if not is_owned: return
-	command.execute(angle, force, DamageController.GetDamage(_index))
+	#command.execute(angle, force, DamageController.GetDamage(_index))
+	command.execute(angle, DamageController.GetDamage(_index))

@@ -1,7 +1,7 @@
 extends IBullet
 
-var _force : float
-var speed : float = 3
+var _force : float = 0
+var speed : float = 10
 var vec : Vector2 = Vector2.UP
 
 func shoot(angle : float=0, force : float=0, damage : float = 0):
@@ -11,4 +11,4 @@ func shoot(angle : float=0, force : float=0, damage : float = 0):
 	vec = (pos - position).normalized()
 
 func move(delta):
-	translate(vec * delta * speed * _force)
+	translate(vec * delta * _force)# * speed 
