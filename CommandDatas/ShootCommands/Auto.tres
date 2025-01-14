@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="CommandData" load_steps=2 format=3 uid="uid://dmlx82jj3eyrh"]
+
+[ext_resource type="Script" path="res://Scripts/CommandData/CommandData.gd" id="1_x4o2i"]
+
+[resource]
+script = ExtResource("1_x4o2i")
+spawn_data = Array[String](["res://Scenes/Bullets/AutoBullet.tscn"])
+data = [[null]]
+coolTime = 3.0

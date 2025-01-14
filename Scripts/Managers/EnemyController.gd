@@ -6,8 +6,7 @@ var distance = 300
 var enemys : Array[IEnemy]
 
 func _ready() -> void:
-	
-	for i in range(30):	
+	for i in range(30):
 		var spawn_pos = Vector2(randf_range(-1, 1), randf_range(-1, 1)).normalized()
 		var enemy = enemy_base.instantiate()
 		add_child(enemy)
@@ -18,3 +17,7 @@ func _ready() -> void:
 
 func get_random_enemy_pos():
 	return enemys[randi_range(0, enemys.size()-1)].position
+
+func Remove_Enemy(enemy):
+	enemys.erase(enemy)
+	enemy.queue_free()

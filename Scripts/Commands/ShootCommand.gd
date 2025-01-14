@@ -3,10 +3,13 @@ extends key_command
 
 func execute(angle : float = 0, force : float = 0, damage : float = 0)->void:
 	super.execute(angle, force, damage)
-	for path in _data.spawn_data:
+	
+	for i in range(_data.spawn_data.size()):
+		var path = _data.spawn_data[i]
+		var _force = _data.force_data[i]
 		
 		var bullet = load(path).instantiate()
 		add_child(bullet)
 		
 		bullet.global_position = Vector2.ZERO
-		bullet.shoot(angle, force, damage)
+		bullet.shoot(angle, _force, damage)

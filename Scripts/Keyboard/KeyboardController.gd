@@ -51,24 +51,23 @@ func reset_key():
 #endregion
 
 
-#var command_base = preload("res://Scenes/Commands/BaseCommand.tscn")
 var command_list = [preload("res://Scenes/Commands/BaseShootCommand.tscn")]#,
 #preload("res://Scenes/Commands/AutoTargetCommand.tscn")]
 
-var data_path = ["ShootCommands"]
+var data_path = ["ShootCommands/"]
 func GetRandomCommad():
 	var index = randi_range(0, 0)
 	var command = command_list[index].instantiate()
 	var path = "res://CommandDatas/" + data_path[index]
-	var resource_files = DirAccess.get_files_at(path)
-	var random_resource = resource_files[randi() % resource_files.size()]
-	var data = load(random_resource)
-	print(data)
-	command.set_command(data)
-
-	#
-	#var count = DirAccess.open(path).get_drive_count()	
-	#var data = load("res://CommandDatas/ShootCommands/BaseData.tres")
+	
+	command.set_command(GetRandomFromPath(path))
 	
 	add_child(command)
 	return command
+
+
+func GetRandomFromPath(path : String):
+	var resource_files = DirAccess.get_files_at(path)
+	var random_resource = resource_files[randi() % resource_files.size()]
+	var data = load(path + random_resource)
+	return data

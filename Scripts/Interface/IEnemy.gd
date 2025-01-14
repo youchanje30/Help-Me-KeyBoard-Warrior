@@ -20,9 +20,11 @@ func move(delta)->void: pass
 func get_damage(damage : float):
 	damage_effect()
 	cur_hp -= damage
-	if cur_hp <= 0:
-		self.queue_free()
+	if cur_hp <= 0: remove()
 
 func damage_effect():
 	anim.play("Hurt")
+
+func remove():
+	EnemyController.Remove_Enemy(self)
 #endregion
