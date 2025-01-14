@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="CommandData" load_steps=2 format=3 uid="uid://bnege80l6g6mx"]
+
+[ext_resource type="Script" path="res://Scripts/CommandData/CommandData.gd" id="1_iahmk"]
+
+[resource]
+script = ExtResource("1_iahmk")
+spawn_data = Array[String](["res://Scenes/Bullets/BaseBullet.tscn", "res://Scenes/Bullets/BaseBullet.tscn"])
+force_data = Array[float]([300.0, 600.0])
+coolTime = 5.0
