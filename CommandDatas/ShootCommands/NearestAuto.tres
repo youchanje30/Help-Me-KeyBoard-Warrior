@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="CommandData" load_steps=2 format=3 uid="uid://cltx44il34mrm"]
+
+[ext_resource type="Script" path="res://Scripts/CommandData/CommandData.gd" id="1_hhovi"]
+
+[resource]
+script = ExtResource("1_hhovi")
+spawn_data = Array[String](["res://Scenes/Bullets/NearestAutoBullet.tscn"])
+force_data = Array[float]([250.0])
+coolTime = 8.0
