@@ -8,7 +8,7 @@
 [node name="Keyboard" parent="." instance=ExtResource("1_7ms1x")]
 
 [node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2(0, 200)
+position = Vector2(3, 155)
 
 [node name="EnterKey" parent="." node_paths=PackedStringArray("generator") instance=ExtResource("2_fcrxf")]
 generator = NodePath("../Keyboard")

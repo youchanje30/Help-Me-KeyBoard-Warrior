@@ -5,14 +5,19 @@ var distance = 300
 
 var enemys : Array[IEnemy]
 
-func _ready() -> void:
-	for i in range(30):
-		var spawn_pos = Vector2(randf_range(-1, 1), randf_range(-1, 1)).normalized()
-		var enemy = enemy_base.instantiate()
-		add_child(enemy)
-		enemys.append(enemy)
-		enemy.global_position = spawn_pos * (distance + randf_range(-100, 100))
-		enemy._ready()
+func _ready() -> void: pass
+
+
+func SpawnEnemys(cnts : int):
+	for i in range(cnts): SpawnEnemy()
+
+func SpawnEnemy():
+	var spawn_pos = Vector2(randf_range(-1, 1), randf_range(-1, 1)).normalized()
+	var enemy = enemy_base.instantiate()
+	add_child(enemy)
+	enemys.append(enemy)
+	enemy.global_position = spawn_pos * (distance + randf_range(-100, 100))
+	enemy._ready()
 
 
 func get_random_enemy_pos():
@@ -34,3 +39,6 @@ func get_nearest_enemy_pos():
 func Remove_Enemy(enemy):
 	enemys.erase(enemy)
 	enemy.queue_free()
+	
+	if enemys.size() != 0: return
+	StageManager.EndStage()

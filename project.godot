@@ -22,6 +22,7 @@ KeyboardController="*res://Scenes/keyboard_controller.tscn"
 EnemyController="*res://Scripts/Managers/EnemyController.gd"
 DamageController="*res://Scripts/Managers/DamageController.gd"
 EffectManager="*res://Scripts/Managers/EffectManager.gd"
+StageManager="*res://Scripts/Managers/StageManager.gd"
 
 [display]
 
