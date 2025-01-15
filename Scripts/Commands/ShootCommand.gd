@@ -12,4 +12,4 @@ func execute(angle : float = 0, damage : float = 0)->void:#force : float = 0, da
 		add_child(bullet)
 		
 		bullet.global_position = Vector2.ZERO
-		bullet.shoot(angle, _force, damage)
+		bullet.shoot(angle + _data.fix_data[i], _force, damage)

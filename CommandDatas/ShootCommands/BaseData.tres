@@ -6,4 +6,5 @@
 script = ExtResource("1_70hf4")
 spawn_data = Array[String](["res://Scenes/Bullets/BaseBullet.tscn"])
 force_data = Array[float]([400.0])
+fix_data = Array[float]([0.0])
 coolTime = 1.0
