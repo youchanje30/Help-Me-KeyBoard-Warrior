@@ -20,7 +20,6 @@ func add_enter_key(key_sprite:key_sprite_controller):
 
 
 #region key controll
-
 func add_key(index:int, key_sprite:key_sprite_controller):
 	var key = nonekey.instantiate()
 	add_child(key)
@@ -28,7 +27,7 @@ func add_key(index:int, key_sprite:key_sprite_controller):
 	key.set_key(index, key_sprite)
 
 	# 50% to buy
-	if randi_range(0, 1) == 0: buy_key(index)
+	#if randi_range(0, 1) == 0: buy_key(index)
 
 
 func sell_key(index:int):
@@ -50,6 +49,12 @@ func reset_key():
 	cur_key_list.resize(0)
 #endregion
 
+
+func BuyRandomKey():
+	var i = randi_range(0, 25)
+	while key_list[i].is_owned:
+		i = randi_range(0, 25)
+	buy_key(i)
 
 var command_list = [preload("res://Scenes/Commands/BaseShootCommand.tscn")]#,
 #preload("res://Scenes/Commands/AutoTargetCommand.tscn")]
