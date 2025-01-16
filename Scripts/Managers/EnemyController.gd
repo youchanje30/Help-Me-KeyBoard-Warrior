@@ -39,6 +39,7 @@ func get_nearest_enemy_pos():
 func Remove_Enemy(enemy):
 	enemys.erase(enemy)
 	enemy.queue_free()
+	GameManager.RewardEnemy()
 	
 	if enemys.size() != 0: return
 	StageManager.EndStage()

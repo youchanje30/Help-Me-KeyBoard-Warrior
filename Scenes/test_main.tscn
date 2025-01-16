@@ -1,11 +1,11 @@
 [gd_scene load_steps=4 format=3 uid="uid://cbkfpumh27t1n"]
 
 [ext_resource type="PackedScene" uid="uid://d2mgkbc7a06ri" path="res://Scenes/keyboard.tscn" id="1_7ms1x"]
-[ext_resource type="Script" path="res://Scripts/Etc/main.gd" id="1_tc0bm"]
+[ext_resource type="Script" path="res://Scripts/Managers/GameManager.gd" id="1_qhd4o"]
 [ext_resource type="PackedScene" uid="uid://m6tseodvlm4g" path="res://Scenes/Keys/SpecificKeys/EnterKey.tscn" id="2_fcrxf"]
 
 [node name="TestMain" type="Node"]
-script = ExtResource("1_tc0bm")
+script = ExtResource("1_qhd4o")
 
 [node name="Keyboard" parent="." instance=ExtResource("1_7ms1x")]
 

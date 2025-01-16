@@ -16,5 +16,5 @@ func StageStart():
 	#endregion
 
 func EndStage():
-	await get_tree().create_timer(10).timeout
+	await get_tree().create_timer(3).timeout
 	StageStart()
