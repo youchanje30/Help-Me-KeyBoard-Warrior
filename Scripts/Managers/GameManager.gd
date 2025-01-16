@@ -1,7 +1,15 @@
 extends Node
 
-var coins : int = 30
 
+@export var ui_controller : UIManager
+
+var coins : int = 30:
+	set(val):
+		coins = val
+		ui_controller.ChangeValueData()
+
+func _ready() -> void:
+	ui_controller = get_tree().get_root().get_node("TestMain").get_node("UI")
 
 #region 재화 관련
 func UseCoin(val):
@@ -17,12 +25,4 @@ func AddCoin(val):
 #region 적 골드 관련
 func RewardEnemy():
 	AddCoin(3)
-
 #endregion
-
-
-
-func buy_btn():
-	if not CanUseCoin(10): return
-	UseCoin(10)
-	KeyboardController.BuyRandomKey()

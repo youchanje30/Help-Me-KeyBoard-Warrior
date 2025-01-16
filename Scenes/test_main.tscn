@@ -1,11 +1,10 @@
 [gd_scene load_steps=4 format=3 uid="uid://cbkfpumh27t1n"]
 
 [ext_resource type="PackedScene" uid="uid://d2mgkbc7a06ri" path="res://Scenes/keyboard.tscn" id="1_7ms1x"]
-[ext_resource type="Script" path="res://Scripts/Managers/GameManager.gd" id="1_qhd4o"]
 [ext_resource type="PackedScene" uid="uid://m6tseodvlm4g" path="res://Scenes/Keys/SpecificKeys/EnterKey.tscn" id="2_fcrxf"]
+[ext_resource type="Script" path="res://Scripts/Managers/UIManager.gd" id="4_m8e2n"]
 
 [node name="TestMain" type="Node"]
-script = ExtResource("1_qhd4o")
 
 [node name="Keyboard" parent="." instance=ExtResource("1_7ms1x")]
 
@@ -15,7 +14,11 @@ position = Vector2(0, 160)
 [node name="EnterKey" parent="." node_paths=PackedStringArray("generator") instance=ExtResource("2_fcrxf")]
 generator = NodePath("../Keyboard")
 
-[node name="Buy Btn" type="Button" parent="."]
+[node name="UI" type="Node" parent="." node_paths=PackedStringArray("_coin_label")]
+script = ExtResource("4_m8e2n")
+_coin_label = NodePath("coins")
+
+[node name="Buy Btn" type="Button" parent="UI"]
 custom_minimum_size = Vector2(50, 50)
 offset_left = 300.0
 offset_top = 450.0
@@ -23,4 +26,11 @@ offset_right = 350.0
 offset_bottom = 500.0
 focus_mode = 0
 
-[connection signal="button_down" from="Buy Btn" to="." method="buy_btn"]
+[node name="coins" type="Label" parent="UI"]
+offset_left = 316.0
+offset_top = -227.0
+offset_right = 388.0
+offset_bottom = -204.0
+text = "coins : 00"
+
+[connection signal="button_down" from="UI/Buy Btn" to="UI" method="buy_btn"]
