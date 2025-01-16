@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://cc7a25hypkr74"]
+
+[ext_resource type="Script" path="res://Scripts/Commands/BuffCommand.gd" id="1_ncce4"]
+
+[node name="BaseBuffCommand" type="Node"]
+script = ExtResource("1_ncce4")

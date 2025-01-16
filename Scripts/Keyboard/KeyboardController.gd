@@ -26,10 +26,6 @@ func add_key(index:int, key_sprite:key_sprite_controller):
 	key_list[index] = key
 	key.set_key(index, key_sprite)
 
-	# 50% to buy
-	#if randi_range(0, 1) == 0: buy_key(index)
-
-
 func sell_key(index:int):
 	key_list[index].sell_key()
 
@@ -43,10 +39,21 @@ func input_key(index: int, is_pressed : bool):
 func reset_key():
 	if enter != null: enter.down_up_btn()
 
+	var buff_list = []
+	var shoot_list = []
+
 	for index in cur_key_list:
+		if key_list[index].command is BuffCommand: buff_list.append(index)
+		else: shoot_list.append(index)
+
+	for index in buff_list + shoot_list:
 		key_list[index].up_key()
 		key_list[index].shoot_key(arrow.angle)
+
+	#region End of EnterKey
 	cur_key_list.resize(0)
+	DamageController.ResetDamage()
+	#endregion
 #endregion
 
 
@@ -56,12 +63,12 @@ func BuyRandomKey():
 		i = randi_range(0, 25)
 	buy_key(i)
 
-var command_list = [preload("res://Scenes/Commands/BaseShootCommand.tscn")]#,
-#preload("res://Scenes/Commands/AutoTargetCommand.tscn")]
+var command_list = [preload("res://Scenes/Commands/BaseShootCommand.tscn"),
+preload("res://Scenes/Commands/BaseBuffCommand.tscn")]
 
-var data_path = ["ShootCommands/"]
+var data_path = ["ShootCommands/", "BuffCommands/"]
 func GetRandomCommad():
-	var index = randi_range(0, 0)
+	var index = randi_range(0, command_list.size()-1)
 	var command = command_list[index].instantiate()
 	var path = "res://CommandDatas/" + data_path[index]
 	

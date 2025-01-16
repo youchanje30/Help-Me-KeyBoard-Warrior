@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="CommandData" load_steps=2 format=3 uid="uid://cjoirc1ued7te"]
+
+[ext_resource type="Script" path="res://Scripts/CommandData/CommandData.gd" id="1_egnn5"]
+
+[resource]
+script = ExtResource("1_egnn5")
+spawn_data = Array[String]([])
+force_data = Array[float]([10.0])
+fix_data = Array[float]([1.0])
+coolTime = 1.0
