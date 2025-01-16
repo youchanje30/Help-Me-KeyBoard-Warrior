@@ -1,36 +1,9 @@
-[gd_scene load_steps=8 format=3 uid="uid://qfbo8ct3icp7"]
+[gd_scene load_steps=9 format=3 uid="uid://qfbo8ct3icp7"]
 
 [ext_resource type="Script" path="res://Scripts/Key/KeySpriteController.gd" id="1_g8fon"]
 [ext_resource type="Texture2D" uid="uid://drcdhbhup0cgb" path="res://Sprites/Keyboards/AllKeys/0.png" id="2_geabb"]
 [ext_resource type="Texture2D" uid="uid://1pdduxeff8ys" path="res://Sprites/Keyboards/WhiteBtn.png" id="3_1op33"]
 [ext_resource type="Texture2D" uid="uid://hq35w0g8ipvb" path="res://Sprites/Keyboards/BtnHighlight.png" id="3_moq36"]
-
-[sub_resource type="Animation" id="Animation_7mnom"]
-resource_name = "new_animation"
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 1),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Vector2(0, 21), Vector2(0, 0)]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath(".:scale")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0, 1),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Vector2(1, 0), Vector2(1, 1)]
-}
 
 [sub_resource type="Animation" id="Animation_q4y6a"]
 length = 0.001
@@ -59,11 +32,41 @@ tracks/1/keys = {
 "values": [Vector2(1, 1)]
 }
 
+[sub_resource type="Animation" id="Animation_7mnom"]
+resource_name = "new_animation"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(0, 21), Vector2(0, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1, 0), Vector2(1, 1)]
+}
+
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_uvcia"]
 _data = {
 "RESET": SubResource("Animation_q4y6a"),
 "new_animation": SubResource("Animation_7mnom")
 }
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_lbadl"]
+size = Vector2(17, 19)
 
 [node name="key_sprite_controller" type="Node2D" node_paths=PackedStringArray("sprite", "highlight_sprite")]
 script = ExtResource("1_g8fon")
@@ -95,3 +98,10 @@ visible = false
 modulate = Color(1, 1, 1, 0.462745)
 texture = ExtResource("3_moq36")
 centered = false
+
+[node name="Area2D" type="Area2D" parent="."]
+monitoring = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(9.5, 10.5)
+shape = SubResource("RectangleShape2D_lbadl")

@@ -10,6 +10,5 @@ func _ready() -> void:
 	ChangeValueData()
 
 func buy_btn():
-	if not GameManager.CanUseCoin(10): return
-	GameManager.UseCoin(10)
-	KeyboardController.BuyRandomKey()
+	if not GameManager.CanUseCoin(GameManager.spawn_coins): return
+	GameManager.BuyKey()

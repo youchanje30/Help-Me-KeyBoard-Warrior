@@ -3,6 +3,8 @@ extends Node
 
 @export var ui_controller : UIManager
 
+var spawn_coins : int = 10
+
 var coins : int = 30:
 	set(val):
 		coins = val
@@ -14,7 +16,7 @@ func _ready() -> void:
 #region 재화 관련
 func UseCoin(val):
 	coins -= val
-	
+
 func CanUseCoin(val):
 	return coins >= val
 
@@ -26,3 +28,8 @@ func AddCoin(val):
 func RewardEnemy():
 	AddCoin(3)
 #endregion
+
+func BuyKey():
+	UseCoin(spawn_coins)
+	KeyboardController.BuyRandomKey()
+	spawn_coins += 10

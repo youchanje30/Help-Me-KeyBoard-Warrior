@@ -52,7 +52,7 @@ func press_btn()->void:
 	up_btn()
 	await get_tree().create_timer(0.05).timeout
 	sprite.region_rect.position = Vector2(region_x_size*1, 0)
-	
+
 
 func disable_btn()->void:
 	up_btn()
