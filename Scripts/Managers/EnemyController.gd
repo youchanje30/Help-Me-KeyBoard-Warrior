@@ -1,6 +1,7 @@
 extends Node
 
-var enemy_base = preload("res://Scenes/Enemys/BaseEnemy.tscn")
+var enemy_path = "res://Scenes/Enemys/"
+
 var distance = 300
 
 var enemys : Array[IEnemy]
@@ -13,7 +14,7 @@ func SpawnEnemys(cnts : int):
 
 func SpawnEnemy():
 	var spawn_pos = Vector2(randf_range(-1, 1), randf_range(-1, 1)).normalized()
-	var enemy = enemy_base.instantiate()
+	var enemy = GetRandomFromPath(enemy_path)
 	add_child(enemy)
 	enemys.append(enemy)
 	enemy.global_position = spawn_pos * (distance + randf_range(-100, 100))
@@ -43,3 +44,10 @@ func Remove_Enemy(enemy):
 	
 	if enemys.size() != 0: return
 	StageManager.EndStage()
+
+
+func GetRandomFromPath(path : String):
+	var resource_files = DirAccess.get_files_at(path)
+	var random_resource = resource_files[randi() % resource_files.size()]
+	var data = load(path + random_resource).instantiate()
+	return data
