@@ -1,11 +1,13 @@
-[gd_scene load_steps=8 format=3 uid="uid://b08kr1bxh5jwh"]
+[gd_scene load_steps=9 format=3 uid="uid://b08kr1bxh5jwh"]
 
 [ext_resource type="Script" path="res://Scripts/Enemys/JumpEnemy.gd" id="1_w0y33"]
+[ext_resource type="Script" path="res://Scripts/Utility/CurveExpansion.gd" id="2_40hxd"]
 [ext_resource type="Texture2D" uid="uid://c33vrem1320xw" path="res://Sprites/Keyboards/AllKeys/EMPTY1.png" id="2_is6mj"]
 
-[sub_resource type="Curve" id="Curve_khcus"]
-_data = [Vector2(0.499382, 0), 0.0, 0.0, 0, 0, Vector2(0.747837, 1), 0.0, 0.0, 0, 0, Vector2(0.998764, 0.00483954), 0.0, 0.0, 0, 0]
+[sub_resource type="Curve" id="Curve_o5x7a"]
+_data = [Vector2(0.7, 0), 0.0, 0.0, 0, 0, Vector2(0.85, 1), 0.0, 0.0, 0, 0, Vector2(1, 0), 0.0, 0.0, 0, 0]
 point_count = 3
+script = ExtResource("2_40hxd")
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_44i8h"]
 size = Vector2(19, 21)
@@ -47,9 +49,10 @@ _data = {
 "RESET": SubResource("Animation_iyrhp")
 }
 
-[node name="JumpEnemy" type="Node2D"]
+[node name="JumpEnemy" type="Node2D" node_paths=PackedStringArray("anim")]
 script = ExtResource("1_w0y33")
-speed_curve = SubResource("Curve_khcus")
+speed_curve = SubResource("Curve_o5x7a")
+anim = NodePath("Animation Player")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("2_is6mj")

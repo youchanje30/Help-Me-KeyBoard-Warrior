@@ -1,14 +1,15 @@
 extends IEnemy
 
 var move_vec : Vector2
-@export var speed : float = 50
-@export var speed_curve : Curve
+var speed : float = 50
+@export var speed_curve : OwnCurve
 var cur_time : float
 
 func _ready() -> void:
 	super._ready()
 	move_vec = -self.global_position.normalized()
 	cur_time = 0
+	speed_curve.GetCurveExtent()
 
 func move(delta):
 	var time = clampf(cur_time + delta, 0, 1)
