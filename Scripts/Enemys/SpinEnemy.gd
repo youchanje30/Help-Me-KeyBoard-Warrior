@@ -2,12 +2,15 @@ extends IEnemy
 
 var distance : float
 var angle : float
-@export var speed : float = 25
+var angle_speed : float
+var move_speed : float
 
 func _ready() -> void:
 	super._ready()
 	distance = 200
-	angle = global_position.angle_to(Vector2.RIGHT)
+	angle = rad_to_deg(global_position.angle_to(Vector2.RIGHT))
+	angle_speed = randf_range(-10, 10)
+	move_speed = randf_range(3, 7)
 	
 
 func move(delta):
@@ -16,6 +19,6 @@ func move(delta):
 	
 	var pos = dir * distance
 	
-	angle += 5 * delta
-	distance -= delta * speed
+	angle += angle_speed * delta
+	distance -= move_speed * delta
 	global_position = pos
