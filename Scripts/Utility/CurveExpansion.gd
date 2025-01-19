@@ -9,5 +9,4 @@ func GetCurveExtent() -> float:
 	for i in range(bake_resolution):
 		extent += sample(float(i)/bake_resolution)
 	extent /= bake_resolution
-	print(extent)
 	return extent

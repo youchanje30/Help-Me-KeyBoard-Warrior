@@ -3,6 +3,7 @@ extends Node
 var cur_stage = 0
 
 func _ready() -> void:
+	await get_tree().create_timer(0).timeout
 	StageStart()
 
 func StageStart():

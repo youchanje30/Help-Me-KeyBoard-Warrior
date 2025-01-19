@@ -22,9 +22,12 @@ func SpawnEnemy():
 
 
 func get_random_enemy_pos():
-	return enemys[randi_range(0, enemys.size()-1)].position
+	if enemys.size() != 0: return enemys[randi_range(0, enemys.size()-1)].position
+	return Vector2.UP
 
 func get_nearest_enemy_pos():
+	if enemys.size() == 0: return Vector2.UP
+	
 	var min_pos = Vector2.ZERO
 	var min_distance = (enemys[0].position.x * enemys[0].position.x) + (enemys[0].position.y * enemys[0].position.y)
 	for enemy in enemys:

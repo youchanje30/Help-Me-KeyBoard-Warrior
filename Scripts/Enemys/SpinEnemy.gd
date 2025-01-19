@@ -9,7 +9,7 @@ func _ready() -> void:
 	super._ready()
 	distance = 200
 	angle = rad_to_deg(global_position.angle_to(Vector2.RIGHT))
-	angle_speed = randf_range(-10, 10)
+	angle_speed = randf_range(5, 10) * (1 if randi_range(0, 1) == 0 else -1)
 	move_speed = randf_range(3, 7)
 	
 
