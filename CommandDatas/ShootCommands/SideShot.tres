@@ -1,9 +1,9 @@
 [gd_resource type="Resource" script_class="CommandData" load_steps=2 format=3 uid="uid://b2j4opu43fhl0"]
 
-[ext_resource type="Script" path="res://Scripts/CommandData/CommandData.gd" id="1_q6o7i"]
+[ext_resource type="Script" path="res://Scripts/CommandData/CommandData.gd" id="1_o1eof"]
 
 [resource]
-script = ExtResource("1_q6o7i")
+script = ExtResource("1_o1eof")
 spawn_data = Array[String](["res://Scenes/Bullets/BaseBullet.tscn"])
 force_data = Array[float]([500.0])
 fix_data = Array[float]([180.0])

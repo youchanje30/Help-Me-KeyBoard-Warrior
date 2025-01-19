@@ -5,7 +5,7 @@ extends Node
 
 var spawn_coins : int = 10
 
-var coins : int = 30:
+var coins : int = 3000:
 	set(val):
 		coins = val
 		ui_controller.ChangeValueData()

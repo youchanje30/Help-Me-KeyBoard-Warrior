@@ -5,6 +5,6 @@
 [resource]
 script = ExtResource("1_iahmk")
 spawn_data = Array[String](["res://Scenes/Bullets/BaseBullet.tscn", "res://Scenes/Bullets/BaseBullet.tscn"])
-force_data = Array[float]([300.0, 600.0])
-fix_data = Array[float]([0.0, 0.0])
+force_data = Array[float]([600.0, 600.0])
+fix_data = Array[float]([15.0, -15.0])
 coolTime = 5.0

@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="CommandData" load_steps=2 format=3 uid="uid://cy2qn3u0p5lax"]
+
+[ext_resource type="Script" path="res://Scripts/CommandData/CommandData.gd" id="1_e32lj"]
+
+[resource]
+script = ExtResource("1_e32lj")
+spawn_data = Array[String](["res://Scenes/Bullets/AccelerateFastBullet.tscn"])
+force_data = Array[float]([400.0])
+fix_data = Array[float]([0.0])
+coolTime = 0.0
