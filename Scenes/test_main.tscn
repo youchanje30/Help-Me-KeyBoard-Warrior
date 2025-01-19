@@ -1,8 +1,9 @@
-[gd_scene load_steps=7 format=4 uid="uid://cbkfpumh27t1n"]
+[gd_scene load_steps=8 format=4 uid="uid://cbkfpumh27t1n"]
 
 [ext_resource type="PackedScene" uid="uid://d2mgkbc7a06ri" path="res://Scenes/keyboard.tscn" id="1_7ms1x"]
 [ext_resource type="PackedScene" uid="uid://m6tseodvlm4g" path="res://Scenes/Keys/SpecificKeys/EnterKey.tscn" id="2_fcrxf"]
 [ext_resource type="Texture2D" uid="uid://bkpntj7n8jbbv" path="res://Sprites/Background/Tileset.png" id="4_03b2r"]
+[ext_resource type="PackedScene" uid="uid://bipxcrka64tq0" path="res://tooltip.tscn" id="4_17w3t"]
 [ext_resource type="Script" path="res://Scripts/Managers/UIManager.gd" id="4_m8e2n"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_c6jxn"]
@@ -130,6 +131,8 @@ offset_top = -227.0
 offset_right = 388.0
 offset_bottom = -204.0
 text = "coins : 00"
+
+[node name="Control" parent="UI" instance=ExtResource("4_17w3t")]
 
 [node name="BackGround" type="Node" parent="."]
 

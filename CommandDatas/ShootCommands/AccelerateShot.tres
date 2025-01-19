@@ -7,4 +7,4 @@ script = ExtResource("1_e32lj")
 spawn_data = Array[String](["res://Scenes/Bullets/AccelerateFastBullet.tscn"])
 force_data = Array[float]([400.0])
 fix_data = Array[float]([0.0])
-coolTime = 0.0
+coolTime = 2.0

@@ -19,6 +19,7 @@ func buy_key():
 	command = KeyboardController.GetRandomCommad()
 	command.connect("ExecuteChange", _sprite_controller.highlight_effect)
 	_sprite_controller.own_setting(is_owned)
+	_sprite_controller.connect("Mouse", tooltip)
 	
 
 func sell_key():
@@ -45,3 +46,6 @@ func shoot_key(angle):#, force):
 	if not is_owned: return
 	#command.execute(angle, force, DamageController.GetDamage(_index))
 	command.execute(angle, DamageController.GetDamage(_index))
+
+func tooltip(is_in : bool):
+	pass
