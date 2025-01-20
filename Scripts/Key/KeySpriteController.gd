@@ -8,6 +8,8 @@ class_name key_sprite_controller
 @export var own_modulate : Color = Color.WHITE
 @export var unown_modulate : Color = Color.BLACK
 
+@export var tooltip_loader : Control
+
 signal Mouse
 
 var region_x_size : int = 0
@@ -64,10 +66,3 @@ func disable_btn()->void:
 func highlight_effect(is_highlight:bool)->void:
 	highlight_sprite.visible = is_highlight
 #endregion
-
-
-func _on_area_2d_mouse_entered() -> void:
-	emit_signal("Mouse", true)
-
-func _on_area_2d_mouse_exited() -> void:
-	emit_signal("Mouse", false)

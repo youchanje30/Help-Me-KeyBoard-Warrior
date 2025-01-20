@@ -20,7 +20,7 @@ func buy_key():
 	command.connect("ExecuteChange", _sprite_controller.highlight_effect)
 	_sprite_controller.own_setting(is_owned)
 	_sprite_controller.connect("Mouse", tooltip)
-	
+	#_sprite_controller.tooltip_loader.tooltip_text = ""
 
 func sell_key():
 	is_owned = false

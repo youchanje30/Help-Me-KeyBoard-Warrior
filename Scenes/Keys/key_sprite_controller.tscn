@@ -4,6 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://drcdhbhup0cgb" path="res://Sprites/Keyboards/AllKeys/0.png" id="2_geabb"]
 [ext_resource type="Texture2D" uid="uid://1pdduxeff8ys" path="res://Sprites/Keyboards/WhiteBtn.png" id="3_1op33"]
 [ext_resource type="Texture2D" uid="uid://hq35w0g8ipvb" path="res://Sprites/Keyboards/BtnHighlight.png" id="3_moq36"]
+[ext_resource type="Script" path="res://Scripts/Etc/ui_inhert.gd" id="5_viudx"]
 
 [sub_resource type="Animation" id="Animation_q4y6a"]
 length = 0.001
@@ -65,11 +66,7 @@ _data = {
 "new_animation": SubResource("Animation_7mnom")
 }
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_lbadl"]
-size = Vector2(17, 19)
-
 [node name="key_sprite_controller" type="Node2D" node_paths=PackedStringArray("sprite", "highlight_sprite")]
-editor_description = "123"
 script = ExtResource("1_g8fon")
 sprite = NodePath("key_sprite")
 highlight_sprite = NodePath("highlight_sprite")
@@ -100,12 +97,10 @@ modulate = Color(1, 1, 1, 0.462745)
 texture = ExtResource("3_moq36")
 centered = false
 
-[node name="Area2D" type="Area2D" parent="."]
-monitoring = false
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-position = Vector2(9.5, 10.5)
-shape = SubResource("RectangleShape2D_lbadl")
-
-[connection signal="mouse_entered" from="Area2D" to="." method="_on_area_2d_mouse_entered"]
-[connection signal="mouse_exited" from="Area2D" to="." method="_on_area_2d_mouse_exited"]
+[node name="ToolTip Loader" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 19.0
+offset_bottom = 21.0
+tooltip_text = "1231231"
+script = ExtResource("5_viudx")
