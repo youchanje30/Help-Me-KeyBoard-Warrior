@@ -42,10 +42,11 @@ func down_key():
 	_sprite_controller.press_btn()
 	return true
 
-func shoot_key(angle):#, force):
+func shoot_key(angle):
 	if not is_owned: return
-	#command.execute(angle, force, DamageController.GetDamage(_index))
 	command.execute(angle, DamageController.GetDamage(_index))
 
 func tooltip(is_in : bool):
-	pass
+	if not is_in: return
+	var data = {}
+	UiManager.make_custom_tooltip(data)

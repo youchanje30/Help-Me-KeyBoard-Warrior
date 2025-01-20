@@ -1,0 +1,27 @@
+[gd_scene load_steps=3 format=3 uid="uid://bipxcrka64tq0"]
+
+[ext_resource type="Theme" uid="uid://cgmwhab13ns0n" path="res://new_theme.tres" id="1_3gktt"]
+[ext_resource type="Script" path="res://Scripts/Etc/tooltip.gd" id="1_i3xcl"]
+
+[node name="Tooltip" type="Control"]
+z_index = -5
+custom_minimum_size = Vector2(200, 200)
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+theme = ExtResource("1_3gktt")
+script = ExtResource("1_i3xcl")
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 0
+offset_right = 147.0
+offset_bottom = 121.0
+
+[node name="MarginContainer" type="MarginContainer" parent="Panel"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Panel/MarginContainer"]
+layout_mode = 2

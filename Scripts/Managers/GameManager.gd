@@ -1,17 +1,11 @@
 extends Node
 
-
-@export var ui_controller : UIManager
-
 var spawn_coins : int = 10
 
 var coins : int = 3000:
 	set(val):
 		coins = val
-		ui_controller.ChangeValueData()
-
-func _ready() -> void:
-	ui_controller = get_tree().get_root().get_node("TestMain").get_node("UI")
+		UiManager.ChangeValueData()
 
 #region 재화 관련
 func UseCoin(val):

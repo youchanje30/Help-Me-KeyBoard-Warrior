@@ -69,6 +69,7 @@ _data = {
 size = Vector2(17, 19)
 
 [node name="key_sprite_controller" type="Node2D" node_paths=PackedStringArray("sprite", "highlight_sprite")]
+editor_description = "123"
 script = ExtResource("1_g8fon")
 sprite = NodePath("key_sprite")
 highlight_sprite = NodePath("highlight_sprite")

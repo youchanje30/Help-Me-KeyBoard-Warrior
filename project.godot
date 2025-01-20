@@ -24,11 +24,16 @@ DamageController="*res://Scripts/Managers/DamageController.gd"
 EffectManager="*res://Scripts/Managers/EffectManager.gd"
 StageManager="*res://Scripts/Managers/StageManager.gd"
 GameManager="*res://Scripts/Managers/GameManager.gd"
+UiManager="*res://Scenes/Managers/ui_manager.tscn"
 
 [display]
 
 window/size/viewport_width=800
 window/size/viewport_height=800
+
+[gui]
+
+timers/tooltip_delay_sec=0.0
 
 [rendering]
 
