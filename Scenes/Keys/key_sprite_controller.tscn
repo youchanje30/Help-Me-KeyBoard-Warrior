@@ -66,11 +66,12 @@ _data = {
 "new_animation": SubResource("Animation_7mnom")
 }
 
-[node name="key_sprite_controller" type="Node2D" node_paths=PackedStringArray("sprite", "highlight_sprite")]
+[node name="key_sprite_controller" type="Node2D" node_paths=PackedStringArray("sprite", "highlight_sprite", "tooltip_loader")]
 script = ExtResource("1_g8fon")
 sprite = NodePath("key_sprite")
 highlight_sprite = NodePath("highlight_sprite")
 unown_modulate = Color(0.513233, 0.513233, 0.513233, 1)
+tooltip_loader = NodePath("ToolTip Loader")
 
 [node name="key_sprite" type="Sprite2D" parent="."]
 texture = ExtResource("2_geabb")
@@ -102,5 +103,4 @@ layout_mode = 3
 anchors_preset = 0
 offset_right = 19.0
 offset_bottom = 21.0
-tooltip_text = "1231231"
 script = ExtResource("5_viudx")

@@ -7,10 +7,7 @@ class_name key_sprite_controller
 
 @export var own_modulate : Color = Color.WHITE
 @export var unown_modulate : Color = Color.BLACK
-
 @export var tooltip_loader : Control
-
-signal Mouse
 
 var region_x_size : int = 0
 

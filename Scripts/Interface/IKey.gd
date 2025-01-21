@@ -14,13 +14,10 @@ func set_key(index : int, sprite_controller : key_sprite_controller):
 
 func buy_key():
 	is_owned = true
-	
-	# for test command
 	command = KeyboardController.GetRandomCommad()
 	command.connect("ExecuteChange", _sprite_controller.highlight_effect)
 	_sprite_controller.own_setting(is_owned)
-	_sprite_controller.connect("Mouse", tooltip)
-	#_sprite_controller.tooltip_loader.tooltip_text = ""
+	set_tooltip()
 
 func sell_key():
 	is_owned = false
@@ -46,7 +43,9 @@ func shoot_key(angle):
 	if not is_owned: return
 	command.execute(angle, DamageController.GetDamage(_index))
 
-func tooltip(is_in : bool):
-	if not is_in: return
-	var data = {}
-	UiManager.make_custom_tooltip(data)
+func set_tooltip():
+	var text = ""
+	text += command.name + " "
+	
+	_sprite_controller.tooltip_loader.tooltip_text = text
+	
