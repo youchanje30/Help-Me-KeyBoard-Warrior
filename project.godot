@@ -25,6 +25,7 @@ EffectManager="*res://Scripts/Managers/EffectManager.gd"
 StageManager="*res://Scripts/Managers/StageManager.gd"
 GameManager="*res://Scripts/Managers/GameManager.gd"
 UiManager="*res://Scenes/Managers/ui_manager.tscn"
+Tooltip="*res://Scenes/Tooltip/tooltip.tscn"
 
 [display]
 

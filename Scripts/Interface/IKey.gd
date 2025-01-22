@@ -11,13 +11,13 @@ func set_key(index : int, sprite_controller : key_sprite_controller):
 	_sprite_controller = sprite_controller
 	_index = index
 	_sprite_controller.own_setting(is_owned)
+	_sprite_controller.connect("Enter", ViewTooltip)
 
 func buy_key():
 	is_owned = true
 	command = KeyboardController.GetRandomCommad()
 	command.connect("ExecuteChange", _sprite_controller.highlight_effect)
 	_sprite_controller.own_setting(is_owned)
-	set_tooltip()
 
 func sell_key():
 	is_owned = false
@@ -43,9 +43,23 @@ func shoot_key(angle):
 	if not is_owned: return
 	command.execute(angle, DamageController.GetDamage(_index))
 
-func set_tooltip():
-	var text = ""
-	text += command.name + " "
+#func set_tooltip():
+	#var text = ""
+	#text += command.name + " "
 	
-	_sprite_controller.tooltip_loader.tooltip_text = text
+	#_sprite_controller.tooltip_loader.tooltip_text = text
 	
+
+func ViewTooltip(is_show : bool):
+	if not is_show:
+		Tooltip.HideItemPopup()
+		return
+	
+	var data
+	if command != null:
+		data = [command._data._type, command._data._name, command._data._info]
+	else:
+		data = ["", "", ""]
+	
+	
+	Tooltip.ItemPopup(Rect2i( Vector2i(_sprite_controller.global_position), Vector2i(_sprite_controller.tooltip_loader.size) ), data)

@@ -8,3 +8,6 @@ spawn_data = Array[String](["res://Scenes/Bullets/AutoBullet.tscn"])
 force_data = Array[float]([25.0])
 fix_data = Array[float]([0.0])
 coolTime = 3.0
+_type = "공격형"
+_name = "자동탄"
+_info = "랜덤한 타겟에게 탄이ㅂ 날라가"

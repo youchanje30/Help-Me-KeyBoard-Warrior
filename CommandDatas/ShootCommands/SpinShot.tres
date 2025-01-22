@@ -8,3 +8,6 @@ spawn_data = Array[String](["res://Scenes/Bullets/SpinBullet.tscn"])
 force_data = Array[float]([400.0])
 fix_data = Array[float]([0.0])
 coolTime = 0.0
+_type = "공격형"
+_name = "회전탄"
+_info = "회전하는 총알을 발사"

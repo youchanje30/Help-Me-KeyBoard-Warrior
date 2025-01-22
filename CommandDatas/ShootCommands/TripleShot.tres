@@ -8,3 +8,6 @@ spawn_data = Array[String](["res://Scenes/Bullets/BaseBullet.tscn", "res://Scene
 force_data = Array[float]([450.0, 600.0, 450.0])
 fix_data = Array[float]([-10.0, 0.0, 10.0])
 coolTime = 1.0
+_type = "공격형"
+_name = "트리플탄"
+_info = "3개의 총알을 발사"

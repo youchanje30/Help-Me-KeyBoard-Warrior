@@ -8,3 +8,6 @@ spawn_data = Array[String]([])
 force_data = Array[float]([10.0])
 fix_data = Array[float]([1.0])
 coolTime = 1.0
+_type = "버프형"
+_name = "1"
+_info = "1"

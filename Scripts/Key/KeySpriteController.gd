@@ -11,6 +11,8 @@ class_name key_sprite_controller
 
 var region_x_size : int = 0
 
+signal Enter
+
 func _ready() -> void:
 	set_sprite_region()
 
@@ -62,4 +64,14 @@ func disable_btn()->void:
 
 func highlight_effect(is_highlight:bool)->void:
 	highlight_sprite.visible = is_highlight
+#endregion
+
+
+
+#region Tooltip
+func ShowTooltip():
+	emit_signal("Enter", true)
+
+func HideTooltip():
+	emit_signal("Enter", false)
 #endregion

@@ -8,3 +8,6 @@ spawn_data = Array[String](["res://Scenes/Bullets/NearestAutoBullet.tscn"])
 force_data = Array[float]([250.0])
 fix_data = Array[float]([0.0])
 coolTime = 8.0
+_type = "공격형"
+_name = "최단거리탄"
+_info = "가장 가까운 적을 공격한다"
