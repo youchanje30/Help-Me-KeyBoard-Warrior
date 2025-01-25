@@ -11,4 +11,4 @@ func shoot(angle : float=0, force : float=0, damage : float = 0, data = {}):
 	vec = (pos - position).normalized()
 
 func move(delta):
-	translate(vec * delta * _force)# * speed 
+	translate(vec * delta * _force)
