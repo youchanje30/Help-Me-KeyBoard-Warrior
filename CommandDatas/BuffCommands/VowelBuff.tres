@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="CommandData" load_steps=2 format=3 uid="uid://sowppvxnlv88"]
+
+[ext_resource type="Script" path="res://Scripts/CommandData/CommandData.gd" id="1_hea1p"]
+
+[resource]
+script = ExtResource("1_hea1p")
+spawn_data = Array[String]([])
+force_data = Array[float]([0.0, 4.0, 8.0, 14.0, 20.0])
+fix_data = Array[float]([2.0, 2.0, 2.0, 2.0, 2.0])
+coolTime = 4.0
+_type = "버프형"
+_name = "모음 강화"
+_info = "같이 사용한 A, E, I, O, U의 공격형의 데미지를 2 증가시킨다"

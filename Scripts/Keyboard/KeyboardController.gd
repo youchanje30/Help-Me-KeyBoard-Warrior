@@ -68,7 +68,7 @@ preload("res://Scenes/Commands/BaseBuffCommand.tscn")]
 
 var data_path = ["ShootCommands/", "BuffCommands/"]
 func GetRandomCommad():
-	var index = randi_range(0, command_list.size()-1)
+	var index = randi_range(0, command_list.size()-1) * randi_range(0, command_list.size()-1)
 	var command = command_list[index].instantiate()
 	var path = "res://CommandDatas/" + data_path[index]
 	
