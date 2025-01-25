@@ -1,6 +1,9 @@
 extends Control
 
+var is_on : bool = false
+
 func ItemPopup(slot : Rect2i, item):
+	is_on = true
 	var mouse_pos = get_viewport().get_mouse_position()
 	var correction
 	if mouse_pos.x <= -get_viewport_rect().size.x/2:
@@ -14,4 +17,7 @@ func ItemPopup(slot : Rect2i, item):
 	%Info.text = item[2]
 
 func HideItemPopup():
+	is_on = false
+	await get_tree().create_timer(0.05).timeout
+	if is_on: return
 	%ItemPopup.hide()

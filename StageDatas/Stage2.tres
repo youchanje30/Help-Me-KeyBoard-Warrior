@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="StageData" load_steps=2 format=3 uid="uid://d00yaouve75om"]
+
+[ext_resource type="Script" path="res://Scripts/StageData/StageData.gd" id="1_3gvqi"]
+
+[resource]
+script = ExtResource("1_3gvqi")
+enemy = Array[String](["res://Scenes/Enemys/BaseEnemy.tscn"])
+time = Array[int]([2])
+add_data = [NodePath("")]
