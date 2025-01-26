@@ -1,6 +1,9 @@
 extends Node
 
-var spawn_coins : int = 10
+var spawn_coins : int = 10:
+	set(val):
+		spawn_coins = val
+		UiManager.ChangeValueData()
 
 var coins : int = 3000:
 	set(val):

@@ -2,10 +2,10 @@
 
 [ext_resource type="Script" path="res://Scripts/Managers/UIManager.gd" id="1_1m7do"]
 
-[node name="UI" type="Node" node_paths=PackedStringArray("_coin_label", "ui_control_inhert")]
+[node name="UI" type="Node" node_paths=PackedStringArray("_buy_btn", "_coin_label")]
 script = ExtResource("1_1m7do")
+_buy_btn = NodePath("Buy Btn")
 _coin_label = NodePath("coins")
-ui_control_inhert = NodePath("")
 
 [node name="Buy Btn" type="Button" parent="."]
 custom_minimum_size = Vector2(50, 50)
